@@ -1,0 +1,6 @@
+{
+  "parent": "cocricotlite:block/dish/tapioca_cafe_latte",
+  "textures": {
+    "texture": "cocricotlite:dish/tapioca_matcha"
+  }
+}

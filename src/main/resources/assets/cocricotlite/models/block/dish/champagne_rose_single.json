@@ -1,0 +1,6 @@
+{
+    "parent": "cocricotlite:block/dish/champagne_single",
+    "textures": {
+			"texture": "cocricotlite:dish/champagne_rose"
+    }
+}

@@ -1,0 +1,79 @@
+{
+  "variants": {
+    "facing=north,type=cafe_latte": {
+      "model": "cocricotlite:dish/tapioca_cafe_latte"
+    },
+    "facing=east,type=cafe_latte": {
+      "model": "cocricotlite:dish/tapioca_cafe_latte",
+      "y": 90
+    },
+    "facing=south,type=cafe_latte": {
+      "model": "cocricotlite:dish/tapioca_cafe_latte",
+      "y": 180
+    },
+    "facing=west,type=cafe_latte": {
+      "model": "cocricotlite:dish/tapioca_cafe_latte",
+      "y": 270
+    },
+    "facing=north,type=milk_tea": {
+      "model": "cocricotlite:dish/tapioca_milk_tea"
+    },
+    "facing=east,type=milk_tea": {
+      "model": "cocricotlite:dish/tapioca_milk_tea",
+      "y": 90
+    },
+    "facing=south,type=milk_tea": {
+      "model": "cocricotlite:dish/tapioca_milk_tea",
+      "y": 180
+    },
+    "facing=west,type=milk_tea": {
+      "model": "cocricotlite:dish/tapioca_milk_tea",
+      "y": 270
+    },
+    "facing=north,type=matcha": {
+      "model": "cocricotlite:dish/tapioca_matcha"
+    },
+    "facing=east,type=matcha": {
+      "model": "cocricotlite:dish/tapioca_matcha",
+      "y": 90
+    },
+    "facing=south,type=matcha": {
+      "model": "cocricotlite:dish/tapioca_matcha",
+      "y": 180
+    },
+    "facing=west,type=matcha": {
+      "model": "cocricotlite:dish/tapioca_matcha",
+      "y": 270
+    },
+    "facing=north,type=matcha_tea": {
+      "model": "cocricotlite:dish/tapioca_matcha_tea"
+    },
+    "facing=east,type=matcha_tea": {
+      "model": "cocricotlite:dish/tapioca_matcha_tea",
+      "y": 90
+    },
+    "facing=south,type=matcha_tea": {
+      "model": "cocricotlite:dish/tapioca_matcha_tea",
+      "y": 180
+    },
+    "facing=west,type=matcha_tea": {
+      "model": "cocricotlite:dish/tapioca_matcha_tea",
+      "y": 270
+    },
+    "facing=north,type=strawberry_milk": {
+      "model": "cocricotlite:dish/tapioca_strawberry_milk"
+    },
+    "facing=east,type=strawberry_milk": {
+      "model": "cocricotlite:dish/tapioca_strawberry_milk",
+      "y": 90
+    },
+    "facing=south,type=strawberry_milk": {
+      "model": "cocricotlite:dish/tapioca_strawberry_milk",
+      "y": 180
+    },
+    "facing=west,type=strawberry_milk": {
+      "model": "cocricotlite:dish/tapioca_strawberry_milk",
+      "y": 270
+    }
+  }
+}

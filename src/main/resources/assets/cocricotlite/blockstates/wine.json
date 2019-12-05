@@ -1,0 +1,129 @@
+{
+  "variants": {
+    "facing=north,type=red_single": {
+      "model": "cocricotlite:dish/wine_red_single"
+    },
+    "facing=east,type=red_single": {
+      "model": "cocricotlite:dish/wine_red_single",
+      "y": 90
+    },
+    "facing=south,type=red_single": {
+      "model": "cocricotlite:dish/wine_red_single",
+      "y": 180
+    },
+    "facing=west,type=red_single": {
+      "model": "cocricotlite:dish/wine_red_single",
+      "y": 270
+    },
+    "facing=north,type=red_double": {
+      "model": "cocricotlite:dish/wine_red_double"
+    },
+    "facing=east,type=red_double": {
+      "model": "cocricotlite:dish/wine_red_double",
+      "y": 90
+    },
+    "facing=south,type=red_double": {
+      "model": "cocricotlite:dish/wine_red_double",
+      "y": 180
+    },
+    "facing=west,type=red_double": {
+      "model": "cocricotlite:dish/wine_red_double",
+      "y": 270
+    },
+    "facing=north,type=white_single": {
+      "model": "cocricotlite:dish/wine_white_single"
+    },
+    "facing=east,type=white_single": {
+      "model": "cocricotlite:dish/wine_white_single",
+      "y": 90
+    },
+    "facing=south,type=white_single": {
+      "model": "cocricotlite:dish/wine_white_single",
+      "y": 180
+    },
+    "facing=west,type=white_single": {
+      "model": "cocricotlite:dish/wine_white_single",
+      "y": 270
+    },
+    "facing=north,type=white_double": {
+      "model": "cocricotlite:dish/wine_white_double"
+    },
+    "facing=east,type=white_double": {
+      "model": "cocricotlite:dish/wine_white_double",
+      "y": 90
+    },
+    "facing=south,type=white_double": {
+      "model": "cocricotlite:dish/wine_white_double",
+      "y": 180
+    },
+    "facing=west,type=white_double": {
+      "model": "cocricotlite:dish/wine_white_double",
+      "y": 270
+    },
+    "facing=north,type=bottle": [
+      {
+        "model": "cocricotlite:dish/wine_bottle",
+        "weight": 3
+      },
+      {
+        "model": "cocricotlite:dish/wine_bottle1",
+        "weight": 1
+      },
+      {
+        "model": "cocricotlite:dish/wine_bottle2",
+        "weight": 2
+      }
+    ],
+    "facing=east,type=bottle": [
+      {
+        "model": "cocricotlite:dish/wine_bottle",
+        "y": 90,
+        "weight": 3
+      },
+      {
+        "model": "cocricotlite:dish/wine_bottle1",
+        "y": 90,
+        "weight": 1
+      },
+      {
+        "model": "cocricotlite:dish/wine_bottle2",
+        "y": 90,
+        "weight": 2
+      }
+    ],
+    "facing=south,type=bottle": [
+      {
+        "model": "cocricotlite:dish/wine_bottle",
+        "y": 180,
+        "weight": 3
+      },
+      {
+        "model": "cocricotlite:dish/wine_bottle1",
+        "y": 180,
+        "weight": 1
+      },
+      {
+        "model": "cocricotlite:dish/wine_bottle2",
+        "y": 180,
+        "weight": 2
+      }
+    ],
+    "facing=west,type=bottle": [
+      {
+        "model": "cocricotlite:dish/wine_bottle",
+        "y": 270,
+        "weight": 3
+      },
+      {
+        "model": "cocricotlite:dish/wine_bottle1",
+        "y": 270,
+        "weight": 1
+      },
+      {
+        "model": "cocricotlite:dish/wine_bottle2",
+        "y": 270,
+        "weight": 2
+      }
+    ]
+  }
+}

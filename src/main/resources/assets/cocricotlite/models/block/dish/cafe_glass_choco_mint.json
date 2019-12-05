@@ -1,0 +1,6 @@
+{
+    "parent": "cocricotlite:block/dish/cafe_glass_latte",
+    "textures": {
+        "texture": "cocricotlite:dish/cafe_glass_choco_mint"
+    }
+}

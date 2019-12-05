@@ -1,0 +1,7 @@
+{
+	"parent": "cocricotlite:block/dish/pizza_margherita",
+	"textures": {
+		"particle": "blocks/planks_big_oak",
+		"texture": "cocricotlite:dish/pizza_quattro_formaggi"
+	}
+}

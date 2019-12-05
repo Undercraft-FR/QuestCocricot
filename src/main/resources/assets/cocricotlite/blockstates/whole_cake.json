@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "cocricotlite:dish/whole_cake"
+    },
+    "facing=east": {
+      "model": "cocricotlite:dish/whole_cake",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "cocricotlite:dish/whole_cake",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "cocricotlite:dish/whole_cake",
+      "y": 270
+    }
+  }
+}

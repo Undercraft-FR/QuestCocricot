@@ -1,0 +1,7 @@
+{
+	"parent": "cocricotlite:block/dish/breakfast_toast_white",
+	"textures": {
+		"particle": "blocks/wool_colored_blue",
+		"texture": "cocricotlite:dish/breakfast_toast_blue"
+	}
+}

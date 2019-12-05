@@ -1,0 +1,6 @@
+{
+    "parent": "cocricotlite:block/dish/wine_red_double",
+    "textures": {
+			"texture": "cocricotlite:dish/wine_white"
+    }
+}

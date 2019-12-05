@@ -1,0 +1,35 @@
+#ENGLISH-US LOCALIZED
+
+#TAB
+itemGroup.tab_dish=Food / Drink
+
+#DISH
+tile.coffee.single.name=Coffee Cup
+tile.coffee.double.name=Coffee Cups
+tile.cafe_glass.latte.name=Cafe Latte
+tile.cafe_glass.choco_mint.name=Mint Chocolate Chip
+tile.tapioca.cafe_latte.name=Tapioca Cafe Latte
+tile.tapioca.milk_tea.name=Tapioca Milk Tea
+tile.tapioca.matcha.name=Tapioca Matcha
+tile.tapioca.matcha_tea.name=Tapioca Matcha Tea
+tile.tapioca.strawberry_milk.name=Tapioca Strawberry Milk
+tile.champagne.single.name=Champagne
+tile.champagne.double.name=Champagnes
+tile.champagne.rose_single.name=Rose Champagne
+tile.champagne.rose_double.name=Rose Champagnes
+tile.wine.red_single.name=Red Wine
+tile.wine.red_double.name=Red Wines
+tile.wine.white_single.name=White Wine
+tile.wine.white_double.name=White Wines
+tile.wine.bottle.name=Bottled Wine
+tile.breakfast.toast.name=Breakfast Toast
+tile.breakfast.croissant.name=Breakfast Croissant
+tile.pizza.margherita.name=Pizza Margherita
+tile.pizza.quattro_formaggi.name=Pizza Quattro Formaggi
+tile.whole_cake.name=Natural Whole Cake
+tile.pancake.butter.name=Butter Pancake
+tile.pancake.berry.name=Berry Pancake
+tile.pancake.chocolate_banana.name=Chocolate Banana Pancake
+tile.pancake.chocolate_berry.name=Chocolate Berry Pancake
+
+

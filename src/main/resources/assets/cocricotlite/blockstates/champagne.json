@@ -1,0 +1,64 @@
+{
+  "variants": {
+    "facing=north,type=single": {
+      "model": "cocricotlite:dish/champagne_single"
+    },
+    "facing=east,type=single": {
+      "model": "cocricotlite:dish/champagne_single",
+      "y": 90
+    },
+    "facing=south,type=single": {
+      "model": "cocricotlite:dish/champagne_single",
+      "y": 180
+    },
+    "facing=west,type=single": {
+      "model": "cocricotlite:dish/champagne_single",
+      "y": 270
+    },
+    "facing=north,type=double": {
+      "model": "cocricotlite:dish/champagne_double"
+    },
+    "facing=east,type=double": {
+      "model": "cocricotlite:dish/champagne_double",
+      "y": 90
+    },
+    "facing=south,type=double": {
+      "model": "cocricotlite:dish/champagne_double",
+      "y": 180
+    },
+    "facing=west,type=double": {
+      "model": "cocricotlite:dish/champagne_double",
+      "y": 270
+    },
+    "facing=north,type=rose_single": {
+      "model": "cocricotlite:dish/champagne_rose_single"
+    },
+    "facing=east,type=rose_single": {
+      "model": "cocricotlite:dish/champagne_rose_single",
+      "y": 90
+    },
+    "facing=south,type=rose_single": {
+      "model": "cocricotlite:dish/champagne_rose_single",
+      "y": 180
+    },
+    "facing=west,type=rose_single": {
+      "model": "cocricotlite:dish/champagne_rose_single",
+      "y": 270
+    },
+    "facing=north,type=rose_double": {
+      "model": "cocricotlite:dish/champagne_rose_double"
+    },
+    "facing=east,type=rose_double": {
+      "model": "cocricotlite:dish/champagne_rose_double",
+      "y": 90
+    },
+    "facing=south,type=rose_double": {
+      "model": "cocricotlite:dish/champagne_rose_double",
+      "y": 180
+    },
+    "facing=west,type=rose_double": {
+      "model": "cocricotlite:dish/champagne_rose_double",
+      "y": 270
+    }
+  }
+}

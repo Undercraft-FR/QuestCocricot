@@ -1,0 +1,35 @@
+#JAPANESE-JP LOCALIZED
+
+#TAB
+itemGroup.tab_dish=食べ物
+
+#DISH
+tile.coffee.single.name=コーヒーカップ
+tile.coffee.double.name=コーヒーカップ
+tile.cafe_glass.latte.name=カフェラッテ
+tile.cafe_glass.choco_mint.name=ミントチョコチップ
+tile.tapioca.cafe_latte.name=タピオカカフェラッテ
+tile.tapioca.milk_tea.name=タピオカミルクティー
+tile.tapioca.matcha.name=タピオカ抹茶
+tile.tapioca.matcha_tea.name=タピオカ抹茶ティー
+tile.tapioca.strawberry_milk.name=タピオカいちごみるく
+tile.champagne.single.name=シャンパン
+tile.champagne.double.name=シャンパン
+tile.champagne.rose_single.name=シャンパン ローズ
+tile.champagne.rose_double.name=シャンパン ローズ
+tile.wine.red_single.name=赤ワイン
+tile.wine.red_double.name=赤ワイン
+tile.wine.white_single.name=白ワイン
+tile.wine.white_double.name=白ワイン
+tile.wine.bottle.name=ビン入りワイン
+tile.breakfast.toast.name=モーニングセット[トースト]
+tile.breakfast.croissant.name=モーニングセット[クロワッサン]
+tile.pizza.margherita.name=ピザ マルゲリータ
+tile.pizza.quattro_formaggi.name=ピザ クアトロフォリッジ
+tile.whole_cake.name=ナチュラルホールケーキ
+tile.pancake.butter.name=パンケーキ
+tile.pancake.berry.name=ベリーパンケーキ
+tile.pancake.chocolate_banana.name=チョコバナナパンケーキ
+tile.pancake.chocolate_berry.name=チョコベリーパンケーキ
+
+
