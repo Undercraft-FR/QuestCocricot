@@ -20,14 +20,11 @@ import rise.cocricotlite.util.IContent;
 
 public class BaseBlock extends Block implements IContent {
 
-    protected final String BLOCK_NAME;
-
     private AxisAlignedBB boundingBox = AABBList.AABB_FULL;
 
     public BaseBlock(String name, Material material, CreativeTabs tab, SoundType sound, float hardness, float resistance)
     {
         super(material);
-        this.BLOCK_NAME = name;
         this.setUnlocalizedName(name);
         this.setRegistryName(CocricotLite.MOD_ID, name);
         this.setCreativeTab(tab);

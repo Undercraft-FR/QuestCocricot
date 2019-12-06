@@ -1,34 +1,38 @@
 {
   "variants": {
-    "facing=north,type=margherita": {
-      "model": "cocricotlite:dish/pizza_margherita"
-    },
-    "facing=east,type=margherita": {
-      "model": "cocricotlite:dish/pizza_margherita",
-      "y": 90
-    },
-    "facing=south,type=margherita": {
-      "model": "cocricotlite:dish/pizza_margherita",
-      "y": 180
-    },
-    "facing=west,type=margherita": {
-      "model": "cocricotlite:dish/pizza_margherita",
-      "y": 270
-    },
-    "facing=north,type=quattro_formaggi": {
-      "model": "cocricotlite:dish/pizza_quattro_formaggi"
-    },
-    "facing=east,type=quattro_formaggi": {
-      "model": "cocricotlite:dish/pizza_quattro_formaggi",
-      "y": 90
-    },
-    "facing=south,type=quattro_formaggi": {
-      "model": "cocricotlite:dish/pizza_quattro_formaggi",
-      "y": 180
-    },
-    "facing=west,type=quattro_formaggi": {
-      "model": "cocricotlite:dish/pizza_quattro_formaggi",
-      "y": 270
-    }
+    "type=margherita": [
+      {
+        "model": "cocricotlite:dish/pizza_margherita"
+      },
+      {
+        "model": "cocricotlite:dish/pizza_margherita",
+        "y": 90
+      },
+      {
+        "model": "cocricotlite:dish/pizza_margherita",
+        "y": 180
+      },
+      {
+        "model": "cocricotlite:dish/pizza_margherita",
+        "y": 270
+      }
+    ],
+    "type=quattro_formaggi": [
+      {
+        "model": "cocricotlite:dish/pizza_quattro_formaggi"
+      },
+      {
+        "model": "cocricotlite:dish/pizza_quattro_formaggi",
+        "y": 90
+      },
+      {
+        "model": "cocricotlite:dish/pizza_quattro_formaggi",
+        "y": 180
+      },
+      {
+        "model": "cocricotlite:dish/pizza_quattro_formaggi",
+        "y": 270
+      }
+    ]
   }
 }

@@ -7,23 +7,22 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.EnumFacing;
 import net.minecraft.util.NonNullList;
 import rise.cocricotlite.Tabs;
-import rise.cocricotlite.block.BaseFacing;
+import rise.cocricotlite.block.BaseBlock;
 import rise.cocricotlite.item.CommonItemBlock;
 import rise.cocricotlite.util.AABBList;
 import rise.cocricotlite.util.Helper;
 import rise.cocricotlite.util.type.EnumPancake;
 import rise.cocricotlite.util.type.PropertyList;
 
-public class BlockPancake extends BaseFacing {
+public class BlockPancake extends BaseBlock {
 
     public BlockPancake()
     {
         super("pancake", Material.GLASS, Tabs.TAB_DISH, SoundType.GLASS, 0.5F, 1F);
         this.setBoundingBox(AABBList.AABB_CUBE_SMALL);
-        this.setDefaultState(this.getBlockState().getBaseState().withProperty(PropertyList.PANCAKE_TYPE, EnumPancake.BUTTER).withProperty(FACING, EnumFacing.NORTH));
+        this.setDefaultState(this.getBlockState().getBaseState().withProperty(PropertyList.PANCAKE_TYPE, EnumPancake.BUTTER));
         this.register(new CommonItemBlock(this, itemStack -> EnumPancake.byMetadata(itemStack.getMetadata()).getName()));
     }
 
@@ -61,7 +60,7 @@ public class BlockPancake extends BaseFacing {
     @Override
     protected BlockStateContainer createBlockState()
     {
-        return new BlockStateContainer(this, PropertyList.PANCAKE_TYPE, FACING);
+        return new BlockStateContainer(this, PropertyList.PANCAKE_TYPE);
     }
 
     public boolean isFullCube(IBlockState state)

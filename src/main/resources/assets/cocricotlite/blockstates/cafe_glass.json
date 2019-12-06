@@ -1,34 +1,38 @@
 {
   "variants": {
-    "facing=north,type=latte": {
-      "model": "cocricotlite:dish/cafe_glass_latte"
-    },
-    "facing=east,type=latte": {
-      "model": "cocricotlite:dish/cafe_glass_latte",
-      "y": 90
-    },
-    "facing=south,type=latte": {
-      "model": "cocricotlite:dish/cafe_glass_latte",
-      "y": 180
-    },
-    "facing=west,type=latte": {
-      "model": "cocricotlite:dish/cafe_glass_latte",
-      "y": 270
-    },
-    "facing=north,type=choco_mint": {
-      "model": "cocricotlite:dish/cafe_glass_choco_mint"
-    },
-    "facing=east,type=choco_mint": {
-      "model": "cocricotlite:dish/cafe_glass_choco_mint",
-      "y": 90
-    },
-    "facing=south,type=choco_mint": {
-      "model": "cocricotlite:dish/cafe_glass_choco_mint",
-      "y": 180
-    },
-    "facing=west,type=choco_mint": {
-      "model": "cocricotlite:dish/cafe_glass_choco_mint",
-      "y": 270
-    }
+    "type=latte": [
+      {
+        "model": "cocricotlite:dish/cafe_glass_latte"
+      },
+      {
+        "model": "cocricotlite:dish/cafe_glass_latte",
+        "y": 90
+      },
+      {
+        "model": "cocricotlite:dish/cafe_glass_latte",
+        "y": 180
+      },
+      {
+        "model": "cocricotlite:dish/cafe_glass_latte",
+        "y": 270
+      }
+    ],
+    "type=choco_mint": [
+      {
+        "model": "cocricotlite:dish/cafe_glass_choco_mint"
+      },
+      {
+        "model": "cocricotlite:dish/cafe_glass_choco_mint",
+        "y": 90
+      },
+      {
+        "model": "cocricotlite:dish/cafe_glass_choco_mint",
+        "y": 180
+      },
+      {
+        "model": "cocricotlite:dish/cafe_glass_choco_mint",
+        "y": 270
+      }
+    ]
   }
 }

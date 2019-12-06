@@ -1,64 +1,72 @@
 {
   "variants": {
-    "facing=north,type=butter": {
-      "model": "cocricotlite:dish/pancake_butter"
-    },
-    "facing=east,type=butter": {
-      "model": "cocricotlite:dish/pancake_butter",
-      "y": 90
-    },
-    "facing=south,type=butter": {
-      "model": "cocricotlite:dish/pancake_butter",
-      "y": 180
-    },
-    "facing=west,type=butter": {
-      "model": "cocricotlite:dish/pancake_butter",
-      "y": 270
-    },
-    "facing=north,type=berry": {
-      "model": "cocricotlite:dish/pancake_berry"
-    },
-    "facing=east,type=berry": {
-      "model": "cocricotlite:dish/pancake_berry",
-      "y": 90
-    },
-    "facing=south,type=berry": {
-      "model": "cocricotlite:dish/pancake_berry",
-      "y": 180
-    },
-    "facing=west,type=berry": {
-      "model": "cocricotlite:dish/pancake_berry",
-      "y": 270
-    },
-    "facing=north,type=chocolate_banana": {
-      "model": "cocricotlite:dish/pancake_chocolate_banana"
-    },
-    "facing=east,type=chocolate_banana": {
-      "model": "cocricotlite:dish/pancake_chocolate_banana",
-      "y": 90
-    },
-    "facing=south,type=chocolate_banana": {
-      "model": "cocricotlite:dish/pancake_chocolate_banana",
-      "y": 180
-    },
-    "facing=west,type=chocolate_banana": {
-      "model": "cocricotlite:dish/pancake_chocolate_banana",
-      "y": 270
-    },
-    "facing=north,type=chocolate_berry": {
-      "model": "cocricotlite:dish/pancake_chocolate_berry"
-    },
-    "facing=east,type=chocolate_berry": {
-      "model": "cocricotlite:dish/pancake_chocolate_berry",
-      "y": 90
-    },
-    "facing=south,type=chocolate_berry": {
-      "model": "cocricotlite:dish/pancake_chocolate_berry",
-      "y": 180
-    },
-    "facing=west,type=chocolate_berry": {
-      "model": "cocricotlite:dish/pancake_chocolate_berry",
-      "y": 270
-    }
+    "type=butter": [
+      {
+        "model": "cocricotlite:dish/pancake_butter"
+      },
+      {
+        "model": "cocricotlite:dish/pancake_butter",
+        "y": 90
+      },
+      {
+        "model": "cocricotlite:dish/pancake_butter",
+        "y": 180
+      },
+      {
+        "model": "cocricotlite:dish/pancake_butter",
+        "y": 270
+      }
+    ],
+    "type=berry": [
+      {
+        "model": "cocricotlite:dish/pancake_berry"
+      },
+      {
+        "model": "cocricotlite:dish/pancake_berry",
+        "y": 90
+      },
+      {
+        "model": "cocricotlite:dish/pancake_berry",
+        "y": 180
+      },
+      {
+        "model": "cocricotlite:dish/pancake_berry",
+        "y": 270
+      }
+    ],
+    "type=chocolate_banana": [
+      {
+        "model": "cocricotlite:dish/pancake_chocolate_banana"
+      },
+      {
+        "model": "cocricotlite:dish/pancake_chocolate_banana",
+        "y": 90
+      },
+      {
+        "model": "cocricotlite:dish/pancake_chocolate_banana",
+        "y": 180
+      },
+      {
+        "model": "cocricotlite:dish/pancake_chocolate_banana",
+        "y": 270
+      }
+    ],
+    "type=chocolate_berry": [
+      {
+        "model": "cocricotlite:dish/pancake_chocolate_berry"
+      },
+      {
+        "model": "cocricotlite:dish/pancake_chocolate_berry",
+        "y": 90
+      },
+      {
+        "model": "cocricotlite:dish/pancake_chocolate_berry",
+        "y": 180
+      },
+      {
+        "model": "cocricotlite:dish/pancake_chocolate_berry",
+        "y": 270
+      }
+    ]
   }
 }

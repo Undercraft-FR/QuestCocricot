@@ -1,5 +1,6 @@
 package rise.cocricotlite.block.dish;
 
+import net.minecraft.block.BlockPlanks;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.BlockStateContainer;
@@ -16,6 +17,7 @@ import rise.cocricotlite.util.AABBList;
 import rise.cocricotlite.util.Helper;
 import rise.cocricotlite.util.type.EnumSingleDouble;
 import rise.cocricotlite.util.type.PropertyList;
+import sun.reflect.annotation.EnumConstantNotPresentExceptionProxy;
 
 public class BlockCoffee extends BaseFacing {
 
@@ -48,23 +50,59 @@ public class BlockCoffee extends BaseFacing {
         }
     }
 
+    /*
+    原木
+    4bit で3 => 後ろの数字とってる
+    左2bit => XYZの情報 右2bitが原木の種類メタ
+    */
+
     //保存時にBlockStateを返す
     public IBlockState getStateFromMeta(int meta)
     {
-//        return this.getDefaultState().withProperty(FACING, EnumFacing.getHorizontal(meta)).withProperty(PropertyList.SINGLE_DOUBLE_TYPE, EnumSingleDouble.byMetadata(3 + (meta >> 1)));
-        return this.getDefaultState().withProperty(PropertyList.SINGLE_DOUBLE_TYPE, EnumSingleDouble.byMetadata(meta));
+        IBlockState state = this.getDefaultState().withProperty(PropertyList.SINGLE_DOUBLE_TYPE, EnumSingleDouble.byMetadata((meta & 3)));
+
+        switch (meta & 7)
+        {
+            case 0:
+                state = state.withProperty(FACING, EnumFacing.NORTH);
+                break;
+            case 2:
+                state = state.withProperty(FACING, EnumFacing.SOUTH);
+                break;
+            case 4:
+                state = state.withProperty(FACING, EnumFacing.WEST);
+                break;
+            case 6:
+                state = state.withProperty(FACING, EnumFacing.EAST);
+                break;
+        }
+
+        return state;
     }
 
     //読み込み時にメタデータを返す
     public int getMetaFromState(IBlockState state)
     {
-//        //ここの代入の仕方がほんまわからん
-//        int i = 0;
-//        i = i | state.getValue(FACING).getHorizontalIndex();
-//        i = i | state.getValue(PropertyList.SINGLE_DOUBLE_TYPE).getMetadata() + 1 << 1;
-//        LogHelper.debugInfoLog(this.getUnlocalizedName() + "Current Meta: " + i);
-//        return i;
-        return state.getValue(PropertyList.SINGLE_DOUBLE_TYPE).getMetadata();
+        int i = 0;
+        i = i | state.getValue(PropertyList.SINGLE_DOUBLE_TYPE).getMetadata();
+
+        switch (state.getValue(FACING))
+        {
+            case NORTH:
+                i |= 0;
+                break;
+            case SOUTH:
+                i |= 2;
+                break;
+            case WEST:
+                i |= 4;
+                break;
+            case EAST:
+                i |= 6;
+                break;
+        }
+
+        return i;
     }
 
     @Override
