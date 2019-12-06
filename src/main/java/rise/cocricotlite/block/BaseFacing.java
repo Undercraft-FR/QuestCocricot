@@ -12,6 +12,7 @@ import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import rise.cocricotlite.util.LogHelper;
 
 public class BaseFacing extends BaseBlock {
 
@@ -25,6 +26,10 @@ public class BaseFacing extends BaseBlock {
 
     public IBlockState getStateForPlacement(World world, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer, EnumHand hand)
     {
+        int efacing = placer.getHorizontalFacing().getOpposite().getIndex() - 2;
+        LogHelper.debugInfoLog("getStateForPlacement " + meta + " efacing " + efacing) ;
+        meta = meta * 4 + efacing;
+
         return super.getStateForPlacement(world, pos, placer.getHorizontalFacing().getOpposite(), hitX, hitY, hitZ, meta, placer, hand);
     }
 
