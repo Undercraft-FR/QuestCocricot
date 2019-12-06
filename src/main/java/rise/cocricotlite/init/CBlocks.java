@@ -4,6 +4,7 @@ import net.minecraft.block.Block;
 
 public class CBlocks {
 
+    //DISH
     public static Block COFFEE;
     public static Block CAFE_GLASS;
     public static Block TAPIOCA;
@@ -13,4 +14,9 @@ public class CBlocks {
     public static Block PIZZA;
     public static Block WHOLE_CAKE;
     public static Block PANCAKE;
+
+    //NATURE
+    public static Block FLOWER_POT;
+    public static Block BIG_FLOWER_POT;
+    public static Block VASE;
 }

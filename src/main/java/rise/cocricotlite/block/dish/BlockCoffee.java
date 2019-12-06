@@ -15,6 +15,7 @@ import rise.cocricotlite.block.BaseFacing;
 import rise.cocricotlite.item.CommonItemBlock;
 import rise.cocricotlite.util.AABBList;
 import rise.cocricotlite.util.Helper;
+import rise.cocricotlite.util.type.EnumPizza;
 import rise.cocricotlite.util.type.EnumSingleDouble;
 import rise.cocricotlite.util.type.PropertyList;
 import sun.reflect.annotation.EnumConstantNotPresentExceptionProxy;
@@ -59,50 +60,14 @@ public class BlockCoffee extends BaseFacing {
     //保存時にBlockStateを返す
     public IBlockState getStateFromMeta(int meta)
     {
-        IBlockState state = this.getDefaultState().withProperty(PropertyList.SINGLE_DOUBLE_TYPE, EnumSingleDouble.byMetadata((meta & 3)));
-
-        switch (meta & 7)
-        {
-            case 0:
-                state = state.withProperty(FACING, EnumFacing.NORTH);
-                break;
-            case 2:
-                state = state.withProperty(FACING, EnumFacing.SOUTH);
-                break;
-            case 4:
-                state = state.withProperty(FACING, EnumFacing.WEST);
-                break;
-            case 6:
-                state = state.withProperty(FACING, EnumFacing.EAST);
-                break;
-        }
-
-        return state;
+        return this.getDefaultState().withProperty(PropertyList.SINGLE_DOUBLE_TYPE, EnumSingleDouble.byMetadata(meta));
     }
 
     //読み込み時にメタデータを返す
     public int getMetaFromState(IBlockState state)
     {
-        int i = 0;
-        i = i | state.getValue(PropertyList.SINGLE_DOUBLE_TYPE).getMetadata();
+        return state.getValue(PropertyList.SINGLE_DOUBLE_TYPE).getMetadata();
 
-        switch (state.getValue(FACING))
-        {
-            case NORTH:
-                i |= 0;
-                break;
-            case SOUTH:
-                i |= 2;
-                break;
-            case WEST:
-                i |= 4;
-                break;
-            case EAST:
-                i |= 6;
-                break;
-        }
-
-        return i;
     }
 
     @Override
