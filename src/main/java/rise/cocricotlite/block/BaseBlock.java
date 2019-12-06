@@ -21,6 +21,7 @@ import rise.cocricotlite.util.IContent;
 public class BaseBlock extends Block implements IContent {
 
     private AxisAlignedBB boundingBox = AABBList.AABB_FULL;
+    private AxisAlignedBB collisionBox = null;
 
     public BaseBlock(String name, Material material, CreativeTabs tab, SoundType sound, float hardness, float resistance)
     {
@@ -66,5 +67,16 @@ public class BaseBlock extends Block implements IContent {
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos)
     {
         return this.boundingBox;
+    }
+
+    public BaseBlock setCollisionBox(AxisAlignedBB aabb)
+    {
+        this.collisionBox = aabb;
+        return this;
+    }
+
+    public AxisAlignedBB getCollisionBoundingBox(IBlockState state, IBlockAccess world, BlockPos pos)
+    {
+        return this.collisionBox != null ? this.collisionBox : super.getCollisionBoundingBox(state, world, pos);
     }
 }

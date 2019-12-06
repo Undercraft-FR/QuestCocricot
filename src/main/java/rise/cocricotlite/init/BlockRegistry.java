@@ -9,12 +9,14 @@ import rise.cocricotlite.CocricotLite;
 import rise.cocricotlite.Tabs;
 import rise.cocricotlite.block.BaseFacing;
 import rise.cocricotlite.block.dish.*;
+import rise.cocricotlite.block.nature.BlockDroppingLeaves;
 import rise.cocricotlite.util.AABBList;
 
 public class BlockRegistry {
 
     public static void load()
     {
+        //DISH
         CBlocks.COFFEE = new BlockCoffee();
         CBlocks.CAFE_GLASS = new BlockCafeGlass();
         CBlocks.TAPIOCA = new BlockTapioca();
@@ -41,5 +43,7 @@ public class BlockRegistry {
         }.setBoundingBox(AABBList.AABB_CUBE_SMALL).register();
         CBlocks.PANCAKE = new BlockPancake();
 
+        //NATURE
+        CBlocks.DROOPING_LEAVES = new BlockDroppingLeaves();
     }
 }

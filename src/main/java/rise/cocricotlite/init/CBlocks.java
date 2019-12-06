@@ -16,7 +16,13 @@ public class CBlocks {
     public static Block PANCAKE;
 
     //NATURE
+    public static Block DROOPING_LEAVES;
+    public static Block WALL_LEAVES;
+    public static Block PLANTING_;
     public static Block FLOWER_POT;
     public static Block BIG_FLOWER_POT;
     public static Block VASE;
+    public static Block WINDOW_BOX;
+    public static Block HANGING_PLANT;
+    public static Block MINI_TREE;
 }
