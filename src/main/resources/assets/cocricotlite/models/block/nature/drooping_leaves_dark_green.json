@@ -1,0 +1,6 @@
+{
+    "parent": "block/cross",
+    "textures": {
+        "cross": "cocricotlite:nature/drooping_leaves_dark_green"
+    }
+}

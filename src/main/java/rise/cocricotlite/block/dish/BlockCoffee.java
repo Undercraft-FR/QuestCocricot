@@ -1,6 +1,5 @@
 package rise.cocricotlite.block.dish;
 
-import net.minecraft.block.BlockPlanks;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.BlockStateContainer;
@@ -15,12 +14,11 @@ import rise.cocricotlite.block.BaseFacing;
 import rise.cocricotlite.item.CommonItemBlock;
 import rise.cocricotlite.util.AABBList;
 import rise.cocricotlite.util.Helper;
-import rise.cocricotlite.util.type.EnumPizza;
 import rise.cocricotlite.util.type.EnumSingleDouble;
 import rise.cocricotlite.util.type.PropertyList;
-import sun.reflect.annotation.EnumConstantNotPresentExceptionProxy;
 
-public class BlockCoffee extends BaseFacing {
+public class BlockCoffee extends BaseFacing
+{
 
     public BlockCoffee()
     {
@@ -33,7 +31,7 @@ public class BlockCoffee extends BaseFacing {
     @Override
     public void registerModels()
     {
-        Helper.forItemModels(this, 1, "dish", new String[] { "coffee_single", "coffee_double" });
+        Helper.forItemModels(this, 1, "dish", new String[]{"coffee_single", "coffee_double"});
     }
 
     public int damageDropped(IBlockState state)
@@ -45,7 +43,7 @@ public class BlockCoffee extends BaseFacing {
     {
         Item item = Item.getItemFromBlock(this);
 
-        for(int meta = 0; meta < EnumSingleDouble.values().length; ++meta)
+        for (int meta = 0; meta < EnumSingleDouble.values().length; ++meta)
         {
             list.add(new ItemStack(item, 1, meta));
         }

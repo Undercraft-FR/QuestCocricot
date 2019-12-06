@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=green": {
+      "model": "cocricotlite:nature/drooping_leaves_green"
+    },
+    "type=light_green": {
+      "model": "cocricotlite:nature/drooping_leaves_light_green"
+    },
+    "type=dark_green": {
+      "model": "cocricotlite:nature/drooping_leaves_dark_green"
+    }
+  }
+}
