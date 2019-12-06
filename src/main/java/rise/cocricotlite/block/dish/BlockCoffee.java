@@ -14,6 +14,8 @@ import rise.cocricotlite.block.BaseFacing;
 import rise.cocricotlite.item.CommonItemBlock;
 import rise.cocricotlite.util.AABBList;
 import rise.cocricotlite.util.Helper;
+import rise.cocricotlite.util.LogHelper;
+import rise.cocricotlite.util.type.EnumPizza;
 import rise.cocricotlite.util.type.EnumSingleDouble;
 import rise.cocricotlite.util.type.PropertyList;
 
@@ -58,14 +60,23 @@ public class BlockCoffee extends BaseFacing
     //保存時にBlockStateを返す
     public IBlockState getStateFromMeta(int meta)
     {
-        return this.getDefaultState().withProperty(PropertyList.SINGLE_DOUBLE_TYPE, EnumSingleDouble.byMetadata(meta));
+        LogHelper.debugInfoLog("getStateFromMeta  meta"+ meta);
+        IBlockState iBlockState = this.getDefaultState().withProperty(FACING,EnumFacing.getHorizontal(meta & 3));
+        iBlockState = iBlockState.withProperty(PropertyList.SINGLE_DOUBLE_TYPE,EnumSingleDouble.byMetadata((meta & 4)/4));
+        LogHelper.debugInfoLog("getStateFromMeta " + iBlockState);
+
+        return iBlockState;
     }
 
     //読み込み時にメタデータを返す
     public int getMetaFromState(IBlockState state)
     {
-        return state.getValue(PropertyList.SINGLE_DOUBLE_TYPE).getMetadata();
+        int meta = 0;
+        meta += state.getValue(FACING).getHorizontalIndex(); //0,1,2,3
+        meta += state.getValue(PropertyList.SINGLE_DOUBLE_TYPE).getMetadata() * 4; // 0, 4
+        LogHelper.debugInfoLog("getMetaFromState " + "FACING " + state.getValue(FACING).getHorizontalIndex() + " SD " + state.getValue(PropertyList.SINGLE_DOUBLE_TYPE).getMetadata() + " i " + meta);
 
+        return meta;
     }
 
     @Override
