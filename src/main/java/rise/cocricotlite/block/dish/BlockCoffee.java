@@ -5,10 +5,14 @@ import net.minecraft.block.material.Material;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumFacing;
+import net.minecraft.util.EnumHand;
 import net.minecraft.util.NonNullList;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
 import rise.cocricotlite.Tabs;
 import rise.cocricotlite.block.BaseFacing;
 import rise.cocricotlite.item.CommonItemBlock;
@@ -27,6 +31,32 @@ public class BlockCoffee extends BaseFacing
         this.setBoundingBox(AABBList.AABB_CUBE_SMALL);
         this.setDefaultState(this.getBlockState().getBaseState().withProperty(PropertyList.SINGLE_DOUBLE_TYPE, EnumSingleDouble.SINGLE).withProperty(FACING, EnumFacing.NORTH));
         this.register(new CommonItemBlock(this, itemStack -> EnumSingleDouble.byMetadata(itemStack.getMetadata()).getName()));
+    }
+
+    /**
+     * ビット作ってメタ作ってブロックに埋め込む
+     * @param world
+     * @param pos
+     * @param facing
+     * @param hitX
+     * @param hitY
+     * @param hitZ
+     * @param meta Enumのメタ
+     * @param placer
+     * @param hand
+     * @return
+     */
+    @Override
+    public IBlockState getStateForPlacement(World world, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer, EnumHand hand)
+    {
+        //EnumFacing内:6こ =>　NEWS 2引く
+        int efacing = placer.getHorizontalFacing().getOpposite().getIndex() - 2;
+        LogHelper.debugInfoLog("getStateForPlacement " + meta + " efacing " + efacing) ;
+        //もとのmeta(Enum)に4かける(シフト演算 <<2 = *4)
+        //ここでbit作ってる
+        meta = meta * 4 + efacing;
+
+        return super.getStateForPlacement(world, pos, placer.getHorizontalFacing().getOpposite(), hitX, hitY, hitZ, meta, placer, hand);
     }
 
     @Override
