@@ -24,28 +24,8 @@ public class BaseFacing extends BaseBlock {
         this.setDefaultState(this.getBlockState().getBaseState().withProperty(FACING, EnumFacing.NORTH));
     }
 
-    /**
-     * ビット作ってメタ作ってブロックに埋め込む
-     * @param world
-     * @param pos
-     * @param facing
-     * @param hitX
-     * @param hitY
-     * @param hitZ
-     * @param meta Enumのメタ
-     * @param placer
-     * @param hand
-     * @return
-     */
     public IBlockState getStateForPlacement(World world, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer, EnumHand hand)
     {
-        //EnumFacing内:6こ =>　NEWS 2引く
-        int efacing = placer.getHorizontalFacing().getOpposite().getIndex() - 2;
-        LogHelper.debugInfoLog("getStateForPlacement " + meta + " efacing " + efacing) ;
-        //もとのmeta(Enum)に4かける(シフト演算 <<2 = *4)
-        //ここでbit作ってる
-        meta = meta * 4 + efacing;
-
         return super.getStateForPlacement(world, pos, placer.getHorizontalFacing().getOpposite(), hitX, hitY, hitZ, meta, placer, hand);
     }
 
