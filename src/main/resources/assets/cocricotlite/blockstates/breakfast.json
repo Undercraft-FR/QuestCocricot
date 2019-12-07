@@ -3,18 +3,15 @@
     "facing=north,type=toast": [
       {
         "model": "cocricotlite:dish/breakfast_toast_white",
-        "weight": 1,
-        "y": 180
+        "weight": 1
       },
       {
         "model": "cocricotlite:dish/breakfast_toast_blue",
-        "weight": 1,
-        "y": 180
+        "weight": 1
       },
       {
         "model": "cocricotlite:dish/breakfast_toast_gray",
-        "weight": 1,
-        "y": 180
+        "weight": 1
       }
     ],
     "facing=east,type=toast": [
@@ -37,15 +34,18 @@
     "facing=south,type=toast": [
       {
         "model": "cocricotlite:dish/breakfast_toast_white",
-        "weight": 1
+        "weight": 1,
+        "y": 180
       },
       {
         "model": "cocricotlite:dish/breakfast_toast_blue",
-        "weight": 1
+        "weight": 1,
+        "y": 180
       },
       {
         "model": "cocricotlite:dish/breakfast_toast_gray",
-        "weight": 1
+        "weight": 1,
+        "y": 180
       }
     ],
     "facing=west,type=toast": [
@@ -68,18 +68,15 @@
     "facing=north,type=croissant": [
       {
         "model": "cocricotlite:dish/breakfast_croissant_white",
-        "weight": 1,
-        "y": 180
+        "weight": 1
       },
       {
         "model": "cocricotlite:dish/breakfast_croissant_blue",
-        "weight": 1,
-        "y": 180
+        "weight": 1
       },
       {
         "model": "cocricotlite:dish/breakfast_croissant_gray",
-        "weight": 1,
-        "y": 180
+        "weight": 1
       }
     ],
     "facing=east,type=croissant": [
@@ -102,15 +99,18 @@
     "facing=south,type=croissant": [
       {
         "model": "cocricotlite:dish/breakfast_croissant_white",
-        "weight": 1
+        "weight": 1,
+        "y": 180
       },
       {
         "model": "cocricotlite:dish/breakfast_croissant_blue",
-        "weight": 1
+        "weight": 1,
+        "y": 180
       },
       {
         "model": "cocricotlite:dish/breakfast_croissant_gray",
-        "weight": 1
+        "weight": 1,
+        "y": 180
       }
     ],
     "facing=west,type=croissant": [

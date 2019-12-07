@@ -47,15 +47,40 @@ public class BlockBreakfast extends BaseFacing {
             list.add(new ItemStack(item, 1, meta));
         }
     }
+//    /** ブロック設置時にbit作る */
+//    public IBlockState getStateForPlacement(World world, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer, EnumHand hand)
+//    {
+//        int horizontal = placer.getHorizontalFacing().getOpposite().getIndex() - 2;
+//        //3bit 3ケタ目にEnum判定
+//        //シフト演算: "<< 2"は左に2つ移動
+//        meta = meta * 4 + horizontal;
+//        return super.getStateForPlacement(world, pos, placer.getHorizontalFacing().getOpposite(), hitX, hitY, hitZ, meta, placer, hand);
+//
+//    }
 
+    /** 保存時にBlockStateにメタを突っ込む */
     public IBlockState getStateFromMeta(int meta)
     {
-        return this.getDefaultState().withProperty(PropertyList.BREAKFAST_TYPE, EnumBreakfast.byMetadata(meta));
+        //ビット演算: ここでFACINGはNEWSの4つ = 0～3の値 → 3のAND(2bit)をとる
+        IBlockState state = this.getDefaultState().withProperty(FACING, EnumFacing.getHorizontal(meta & 3));
+
+        //ビット演算: ブロックに保持されたmetaは3bitなので、３桁目を取りたい = 4のAND(3bit)をとればいい
+        //シフト演算: Enumのmetaをもらいたいので、getStateForPlacement()でずらしたのを戻す
+        state = state.withProperty(PropertyList.BREAKFAST_TYPE, EnumBreakfast.byMetadata((meta & 4) / 4));
+
+        return state;
     }
 
+    /** 読み込み時にメタからBlockStateを剥ぎ取る */
     public int getMetaFromState(IBlockState state)
     {
-        return state.getValue(PropertyList.BREAKFAST_TYPE).getMetadata();
+        int i = 0;
+        i += state.getValue(FACING).getHorizontalIndex();
+
+        //シフト演算: 3bitより3桁目の値にEnumの値をセットしたい → 左に2移動させる
+        i += state.getValue(PropertyList.BREAKFAST_TYPE).getMetadata() * 4;
+
+        return i;
     }
 
     @Override

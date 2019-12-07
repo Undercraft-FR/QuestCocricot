@@ -15,7 +15,6 @@ import rise.cocricotlite.item.CommonItemBlock;
 import rise.cocricotlite.util.AABBList;
 import rise.cocricotlite.util.Helper;
 import rise.cocricotlite.util.LogHelper;
-import rise.cocricotlite.util.type.EnumPizza;
 import rise.cocricotlite.util.type.EnumSingleDouble;
 import rise.cocricotlite.util.type.PropertyList;
 
@@ -58,22 +57,49 @@ public class BlockCoffee extends BaseFacing
     */
 
     //保存時にBlockStateを返す
+    //ブロックに与えられたメタが帰ってくる(0~7 getStateForPlacement)
+    //3bit: 右2つfacing値(FACINGはNEWSで4つ => 2bitで表せる) 左がenum(single,doubleで2つ =>1bitでいける)
     public IBlockState getStateFromMeta(int meta)
     {
         LogHelper.debugInfoLog("getStateFromMeta  meta"+ meta);
+        //右2bit(ex:001 => meta & 3 001と011のAND =>> 001 <<= FACINGの値
+        //ex: 101と011 のAND =>> 001
+        //AND: どちらも1(true)の時に1(true)が帰ってくる
         IBlockState iBlockState = this.getDefaultState().withProperty(FACING,EnumFacing.getHorizontal(meta & 3));
-        iBlockState = iBlockState.withProperty(PropertyList.SINGLE_DOUBLE_TYPE,EnumSingleDouble.byMetadata((meta & 4)/4));
+
+        // 101(double, facing:1) と 4(3bit 100)でANDとる 100 => 4帰ってくる => 4でわる => 1 = enumは1 == double
+        // 001(single, facing;1) と 4(3bit 100)でAND 000 => 0が帰ってくる => 4でわって => 0 = enumは0 == single
+        iBlockState = iBlockState.withProperty(PropertyList.SINGLE_DOUBLE_TYPE,EnumSingleDouble.byMetadata((meta & 4) / 4));
         LogHelper.debugInfoLog("getStateFromMeta " + iBlockState);
 
         return iBlockState;
     }
 
+    /*
+    アイテムの持ってるメタとブロックの持ってるメタは違う
+コーヒー:0,1 とは別で ブロック設置したとき:別のメタが持ってる？
+
+
+右:コーヒー0か1のビット 右2つがEnumFacingのビット
+100
+
+     */
+
+
+
+
     //読み込み時にメタデータを返す
+    //getStateFromMetaの真逆やってる
     public int getMetaFromState(IBlockState state)
     {
         int meta = 0;
         meta += state.getValue(FACING).getHorizontalIndex(); //0,1,2,3
+
+        //3bitで3ケタめに置きたい
+        //なんで4かけんの？ => シフト演算(1をずらす演算)で "meta << 2" は "meta * 4"と同じ値が出る
         meta += state.getValue(PropertyList.SINGLE_DOUBLE_TYPE).getMetadata() * 4; // 0, 4
+
+
         LogHelper.debugInfoLog("getMetaFromState " + "FACING " + state.getValue(FACING).getHorizontalIndex() + " SD " + state.getValue(PropertyList.SINGLE_DOUBLE_TYPE).getMetadata() + " i " + meta);
 
         return meta;
