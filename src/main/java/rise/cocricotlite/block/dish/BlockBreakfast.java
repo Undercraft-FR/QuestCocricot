@@ -30,7 +30,7 @@ public class BlockBreakfast extends BaseFacing {
     @Override
     public void registerModels()
     {
-        Helper.forItemModels(this, 1, "dish", new String[] { "breakfast_toast", "breakfast_croissant" });
+        Helper.forItemModels(this, 1, "dish", new String[] { "toast", "croissant" });
     }
 
     public int damageDropped(IBlockState state)

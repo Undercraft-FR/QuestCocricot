@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "cocricotlite:nature/planting_green_gold_crest"
+  }
+}

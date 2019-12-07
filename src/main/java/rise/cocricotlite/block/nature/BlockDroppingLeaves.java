@@ -20,7 +20,7 @@ public class BlockDroppingLeaves extends BaseBlock {
 
     public BlockDroppingLeaves()
     {
-        super("drooping_leaves", Material.GRASS, Tabs.TAB_NATURE, SoundType.GROUND, 0.5F, 1F);
+        super("drooping_leaves", Material.GRASS, Tabs.TAB_NATURE, SoundType.PLANT, 0.2F, 1F);
         this.setCollisionBox(AABBList.AABB_NONE);
         this.setDefaultState(this.getBlockState().getBaseState().withProperty(PropertyList.DROOPING_LEAVES_TYPE, EnumDroopingLeaves.GREEN));
         this.register(new CommonItemBlock(this, itemStack -> EnumDroopingLeaves.byMetadata(itemStack.getMetadata()).getName()));
@@ -29,7 +29,7 @@ public class BlockDroppingLeaves extends BaseBlock {
     @Override
     public void registerModels()
     {
-        Helper.forItemModels(this, 2, "nature", new String[]{"drooping_leaves_green", "drooping_leaves_light_green", "drooping_leaves_dark_green"});
+        Helper.forItemModels(this, 2, "nature", new String[]{"green", "light_green", "dark_green"});
     }
 
     public int damageDropped(IBlockState state)

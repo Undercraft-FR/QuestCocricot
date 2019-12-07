@@ -30,7 +30,7 @@ public class BlockWine extends BaseBlock {
     @Override
     public void registerModels()
     {
-        Helper.forItemModels(this, 4, "dish", new String[] { "wine_red_single", "wine_red_double", "wine_white_single", "wine_white_double", "wine_bottle" });
+        Helper.forItemModels(this, 4, "dish", new String[] { "red_single", "red_double", "white_single", "white_double", "bottle" });
     }
 
     public int damageDropped(IBlockState state)

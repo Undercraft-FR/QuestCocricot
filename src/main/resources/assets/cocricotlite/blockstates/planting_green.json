@@ -1,0 +1,37 @@
+{
+  "variants": {
+    "type=umbellata": {
+      "model": "cocricotlite:nature/planting_green_umbellata"
+    },
+    "type=tupidanthus": {
+      "model": "cocricotlite:nature/planting_green_tupidanthus"
+    },
+    "type=sansevieria": {
+      "model": "cocricotlite:nature/planting_green_sansevieria"
+    },
+    "type=olive": {
+      "model": "cocricotlite:nature/planting_green_olive"
+    },
+    "type=benjamin": {
+      "model": "cocricotlite:nature/planting_green_benjamin"
+    },
+    "type=gold_crest": {
+      "model": "cocricotlite:nature/planting_green_gold_crest"
+    },
+    "type=wild_banana": {
+      "model": "cocricotlite:nature/planting_green_wild_banana"
+    },
+    "type=pachira": {
+      "model": "cocricotlite:nature/planting_green_pachira"
+    },
+    "type=yucca": {
+      "model": "cocricotlite:nature/planting_green_yucca"
+    },
+    "type=dypsis_lutescens": {
+      "model": "cocricotlite:nature/planting_green_dypsis_lutescens"
+    },
+    "type=cactus": {
+      "model": "cocricotlite:nature/planting_green_cactus"
+    }
+  }
+}

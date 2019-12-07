@@ -58,7 +58,7 @@ public class Helper {
     {
         for(int i = 0; i < maxMeta + 1; ++i)
         {
-            CocricotLite.proxy.registerItemModel(Item.getItemFromBlock(block), i, new ModelResourceLocation("cocricotlite:" + category + "/" + typeName[i], "inventory"));
+            CocricotLite.proxy.registerItemModel(Item.getItemFromBlock(block), i, new ModelResourceLocation("cocricotlite:" + category + "/" + block.getUnlocalizedName().substring(5) + "_" + typeName[i], "inventory"));
         }
     }
 

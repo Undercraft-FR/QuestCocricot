@@ -18,7 +18,7 @@ public class CBlocks {
     //NATURE
     public static Block DROOPING_LEAVES;
     public static Block WALL_LEAVES;
-    public static Block PLANTING_;
+    public static Block PLANTING_GREEN;
     public static Block FLOWER_POT;
     public static Block BIG_FLOWER_POT;
     public static Block VASE;

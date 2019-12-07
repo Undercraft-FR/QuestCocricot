@@ -32,7 +32,7 @@ public class BlockCoffee extends BaseFacing
     @Override
     public void registerModels()
     {
-        Helper.forItemModels(this, 1, "dish", new String[]{"coffee_single", "coffee_double"});
+        Helper.forItemModels(this, 1, "dish", new String[]{"single", "double"});
     }
 
     public int damageDropped(IBlockState state)

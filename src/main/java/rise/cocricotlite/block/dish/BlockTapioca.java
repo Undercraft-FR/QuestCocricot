@@ -29,7 +29,7 @@ public class BlockTapioca extends BaseBlock {
     @Override
     public void registerModels()
     {
-        Helper.forItemModels(this, 4, "dish", new String[] { "tapioca_cafe_latte", "tapioca_milk_tea", "tapioca_matcha", "tapioca_matcha_tea", "tapioca_strawberry_milk" });
+        Helper.forItemModels(this, 4, "dish", new String[] { "cafe_latte", "milk_tea", "matcha", "matcha_tea", "strawberry_milk" });
     }
 
     public int damageDropped(IBlockState state)

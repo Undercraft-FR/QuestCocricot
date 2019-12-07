@@ -10,6 +10,7 @@ import rise.cocricotlite.Tabs;
 import rise.cocricotlite.block.BaseFacing;
 import rise.cocricotlite.block.dish.*;
 import rise.cocricotlite.block.nature.BlockDroppingLeaves;
+import rise.cocricotlite.block.nature.BlockPlantingGreen;
 import rise.cocricotlite.util.AABBList;
 
 public class BlockRegistry {
@@ -45,5 +46,7 @@ public class BlockRegistry {
 
         //NATURE
         CBlocks.DROOPING_LEAVES = new BlockDroppingLeaves();
+//        CBlocks.WALL_LEAVES = new BlockWallLeaves();
+        CBlocks.PLANTING_GREEN = new BlockPlantingGreen();
     }
 }

@@ -16,7 +16,7 @@ public class CocricotLite {
 
     public static final String MOD_ID = "cocricotlite";
     static final String MOD_NAME = "CocricotLite";
-    static final String MOD_VERSION = "1.0.0";
+    static final String MOD_VERSION = "1.12.2-r1";
 
     @SidedProxy(clientSide = "rise.cocricotlite.proxy.ClientProxy", serverSide = "rise.cocricotlite.proxy.CommonProxy")
     public static CommonProxy proxy;

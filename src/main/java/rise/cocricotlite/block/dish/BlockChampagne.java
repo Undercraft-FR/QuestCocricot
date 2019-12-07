@@ -29,7 +29,7 @@ public class BlockChampagne extends BaseBlock {
     @Override
     public void registerModels()
     {
-        Helper.forItemModels(this, 3, "dish", new String[] { "champagne_single", "champagne_double", "champagne_rose_single", "champagne_rose_double" });
+        Helper.forItemModels(this, 3, "dish", new String[] { "single", "double", "rose_single", "rose_double" });
     }
 
     public int damageDropped(IBlockState state)

@@ -1,0 +1,6 @@
+{
+    "parent": "cocricotlite:block/nature/base_planting_green",
+    "textures": {
+        "texture": "cocricotlite:nature/planting_green_cactus"
+    }
+}

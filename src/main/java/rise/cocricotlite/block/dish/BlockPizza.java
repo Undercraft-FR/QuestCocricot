@@ -29,7 +29,7 @@ public class BlockPizza extends BaseBlock {
     @Override
     public void registerModels()
     {
-        Helper.forItemModels(this, 1, "dish", new String[] { "pizza_margherita", "pizza_quattro_formaggi" });
+        Helper.forItemModels(this, 1, "dish", new String[] { "margherita", "quattro_formaggi" });
     }
 
     public int damageDropped(IBlockState state)
