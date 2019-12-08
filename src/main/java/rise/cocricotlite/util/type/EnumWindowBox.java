@@ -3,20 +3,19 @@ package rise.cocricotlite.util.type;
 import net.minecraft.util.IStringSerializable;
 import rise.cocricotlite.util.IMetadata;
 
-public enum EnumVase implements IStringSerializable, IMetadata {
+public enum EnumWindowBox implements IStringSerializable, IMetadata {
 
     WHITE(0, "white"),
-    LIGHT_BROWN(1, "light_brown"),
-    BROWN(2, "brown"),
-    DARK_ORANGE(3, "dark_orange"),
-    BLACK(4, "black"),
-    BASKET_LIGHT(5, "marine_blue");
+    SEA_DRIFT(1, "sea_drift"),
+    NATURAL(2, "natural"),
+    BROWN(3, "brown");
+//    DARK(4, "dark");
 
-    private static final EnumVase[] META_LOOKUP = new EnumVase[values().length];
+    private static final EnumWindowBox[] META_LOOKUP = new EnumWindowBox[values().length];
     private final int meta;
     private final String name;
 
-    EnumVase(int meta, String name)
+    EnumWindowBox(int meta, String name)
     {
         this.meta = meta;
         this.name = name;
@@ -32,7 +31,7 @@ public enum EnumVase implements IStringSerializable, IMetadata {
         return this.name;
     }
 
-    public static EnumVase byMetadata(int meta)
+    public static EnumWindowBox byMetadata(int meta)
     {
         if(meta < 0 || meta >= META_LOOKUP.length)
         {
@@ -49,9 +48,9 @@ public enum EnumVase implements IStringSerializable, IMetadata {
 
     static
     {
-        EnumVase[] var = values();
+        EnumWindowBox[] var = values();
 
-        for(EnumVase type : var)
+        for(EnumWindowBox type : var)
         {
             META_LOOKUP[type.getMetadata()] = type;
         }

@@ -1,0 +1,79 @@
+{
+  "variants": {
+    "facing=north,type=white": {
+      "model": "cocricotlite:nature/window_box_white",
+      "y": 90
+    },
+    "facing=east,type=white": {
+      "model": "cocricotlite:nature/window_box_white",
+      "y": 180
+    },
+    "facing=south,type=white": {
+      "model": "cocricotlite:nature/window_box_white",
+      "y": 270
+    },
+    "facing=west,type=white": {
+      "model": "cocricotlite:nature/window_box_white"
+    },
+    "facing=north,type=sea_drift": {
+      "model": "cocricotlite:nature/window_box_sea_drift",
+      "y": 90
+    },
+    "facing=east,type=sea_drift": {
+      "model": "cocricotlite:nature/window_box_sea_drift",
+      "y": 180
+    },
+    "facing=south,type=sea_drift": {
+      "model": "cocricotlite:nature/window_box_sea_drift",
+      "y": 270
+    },
+    "facing=west,type=sea_drift": {
+      "model": "cocricotlite:nature/window_box_sea_drift"
+    },
+    "facing=north,type=natural": {
+      "model": "cocricotlite:nature/window_box_natural",
+      "y": 90
+    },
+    "facing=east,type=natural": {
+      "model": "cocricotlite:nature/window_box_natural",
+      "y": 180
+    },
+    "facing=south,type=natural": {
+      "model": "cocricotlite:nature/window_box_natural",
+      "y": 270
+    },
+    "facing=west,type=natural": {
+      "model": "cocricotlite:nature/window_box_natural"
+    },
+    "facing=north,type=brown": {
+      "model": "cocricotlite:nature/window_box_brown",
+      "y": 90
+    },
+    "facing=east,type=brown": {
+      "model": "cocricotlite:nature/window_box_brown",
+      "y": 180
+    },
+    "facing=south,type=brown": {
+      "model": "cocricotlite:nature/window_box_brown",
+      "y": 270
+    },
+    "facing=west,type=brown": {
+      "model": "cocricotlite:nature/window_box_brown"
+    },
+    "facing=north,type=dark": {
+      "model": "cocricotlite:nature/window_box_dark",
+      "y": 90
+    },
+    "facing=east,type=dark": {
+      "model": "cocricotlite:nature/window_box_dark",
+      "y": 180
+    },
+    "facing=south,type=dark": {
+      "model": "cocricotlite:nature/window_box_dark",
+      "y": 270
+    },
+    "facing=west,type=dark": {
+      "model": "cocricotlite:nature/window_box_dark"
+    }
+  }
+}

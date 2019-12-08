@@ -1,0 +1,7 @@
+{
+  "parent": "cocricotlite:block/nature/window_box",
+  "textures": {
+    "particle": "cocricotlite:nature/window_box_natural",
+    "texture": "cocricotlite:nature/window_box_natural"
+  }
+}

@@ -20,7 +20,7 @@ public class Tabs {
         @Override
         public ItemStack getTabIconItem()
         {
-            return new ItemStack(CBlocks.WHOLE_CAKE, 1, 0);
+            return new ItemStack(CBlocks.FLOWER_POT, 1, 3);
         }
     };
 }

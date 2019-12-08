@@ -2,6 +2,7 @@
 
 #TAB
 itemGroup.tab_dish=Food / Drink
+itemGroyp.tab.nature=Nature
 
 #DISH
 tile.coffee.single.name=Coffee Cup
@@ -61,6 +62,13 @@ tile.flower_pot_big.dark_orange.name=Big Dark Orange Flower Pot
 tile.flower_pot_big.black.name=Big Black Flower Pot
 tile.flower_pot_big.basket_light.name=Big Basket Light Flower Pot
 tile.flower_pot_big.basket.name=Big Basket Flower Pot
+tile.vase.white.name=White Vase
+tile.vase.light_brown.name=Light Brown Vase
+tile.vase.brown.name=Brown Vase
+tile.vase.dark_orange.name=Dark OrangeVase
+tile.vase.black.name=Black Vase
+tile.vase.marine_blue.name=Marine Blue Vase
+
 
 
 

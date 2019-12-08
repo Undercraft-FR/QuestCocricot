@@ -1,6 +1,5 @@
 package rise.cocricotlite.init;
 
-import net.minecraft.block.BlockFlower;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
@@ -10,9 +9,7 @@ import rise.cocricotlite.CocricotLite;
 import rise.cocricotlite.Tabs;
 import rise.cocricotlite.block.BaseFacing;
 import rise.cocricotlite.block.dish.*;
-import rise.cocricotlite.block.nature.BlockDroopingLeaves;
-import rise.cocricotlite.block.nature.BlockFlowerPot;
-import rise.cocricotlite.block.nature.BlockPlantingGreen;
+import rise.cocricotlite.block.nature.*;
 import rise.cocricotlite.util.AABBList;
 
 public class BlockRegistry {
@@ -52,5 +49,7 @@ public class BlockRegistry {
         CBlocks.PLANTING_GREEN = new BlockPlantingGreen();
         CBlocks.FLOWER_POT = new BlockFlowerPot("flower_pot");
         CBlocks.FLOWER_POT_BIG = new BlockFlowerPot("flower_pot_big");
+        CBlocks.VASE = new BlockVase();
+        CBlocks.WINDOW_BOX = new BlockWindowBox();
     }
 }

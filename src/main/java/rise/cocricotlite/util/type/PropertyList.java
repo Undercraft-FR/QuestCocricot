@@ -20,5 +20,7 @@ public class PropertyList {
     public static final PropertyEnum<EnumPlantingGreen> PLANTING_GREEN_TYPE = PropertyEnum.create("type", EnumPlantingGreen.class);
     public static final PropertyEnum<EnumFlowerPot> FLOWER_POT_PROPERTY_TYPE = PropertyEnum.create("type", EnumFlowerPot.class);
     public static final PropertyEnum<EnumVase> VASE_TYPE = PropertyEnum.create("type", EnumVase.class);
+    public static final PropertyEnum<EnumWindowBox> WINDOW_BOX_TYPE = PropertyEnum.create("type", EnumWindowBox.class);
+
 
 }

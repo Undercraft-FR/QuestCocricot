@@ -2,6 +2,7 @@
 
 #TAB
 itemGroup.tab_dish=食べ物
+itemGroyp.tab.nature=自然
 
 #DISH
 tile.coffee.single.name=コーヒーカップ
@@ -59,8 +60,15 @@ tile.flower_pot_big.light_brown.name=大きな淡い茶色の植木鉢
 tile.flower_pot_big.brown.name=大きな茶色い植木鉢
 tile.flower_pot_big.dark_orange.name=大きなオレンジの植木鉢
 tile.flower_pot_big.black.name=大きな黒い植木鉢
-tile.flower_pot_big.basket_light.name=大きな白い植木バスケット
+tile.flower_pot_big.basket_light.name=大きな白いe//植木バスケット
 tile.flower_pot_big.basket.name=大きな植木バスケット
+tile.vase.white.name=白い壺
+tile.vase.light_brown.name=淡い茶色の壺
+tile.vase.brown.name=茶色い壺
+tile.vase.dark_orange.name=オレンジの壺
+tile.vase.black.name=黒い壺
+tile.vase.marine_blue.name=蒼い壺
+
 
 
 

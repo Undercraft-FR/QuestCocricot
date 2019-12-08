@@ -1,0 +1,8 @@
+{
+  "parent": "cocricotlite:block/nature/vase",
+  "textures": {
+    "particle": "cocricotlite:nature/vase_marine_blue",
+    "texture": "cocricotlite:nature/vase_marine_blue",
+    "texture1": "cocricotlite:nature/vase_marine_blue1"
+  }
+}

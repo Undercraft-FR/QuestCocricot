@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "type=white": {
+      "model": "cocricotlite:nature/vase_white"
+    },
+    "type=light_brown": {
+      "model": "cocricotlite:nature/vase_light_brown"
+    },
+    "type=brown": {
+      "model": "cocricotlite:nature/vase_brown"
+    },
+    "type=dark_orange": {
+      "model": "cocricotlite:nature/vase_dark_orange"
+    },
+    "type=black": {
+      "model": "cocricotlite:nature/vase_black"
+    },
+    "type=marine_blue": {
+      "model": "cocricotlite:nature/vase_marine_blue"
+    }
+  }
+}

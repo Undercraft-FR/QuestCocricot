@@ -64,4 +64,3 @@ tasks.withType(Jar) {
 tasks.withType(Jar) {
     compileApiJava.options.encoding = 'UTF-8'
 }
-

@@ -82,7 +82,7 @@ public class Helper {
      * @param maxMeta 最大メタ値(<E>.values().lengthで取得するのが基本)
      * @param <E> IMetadataとIStringSerializableを継承したenumクラス
      */
-    public static <E extends Enum & IMetadata & IStringSerializable> void forItemModels(Block block, String category, Class<E> target, int maxMeta)
+    public static <E extends IMetadata & IStringSerializable> void forItemModels(Block block, String category, Class<E> target, int maxMeta)
     {
         for(int i = 0; i < maxMeta; ++i)
         {
@@ -98,7 +98,7 @@ public class Helper {
      * @param <E> IMetadataを継承したenumクラス
      * @return 各種パラメータを追加したenum
      */
-    private static <E extends Enum & IMetadata> E valueOf(Class<E> target, int meta) {
+    private static <E extends IMetadata> E valueOf(Class<E> target, int meta) {
 
         return Arrays.stream(target.getEnumConstants())
                 .filter(data -> data.getMetadata() == meta)
