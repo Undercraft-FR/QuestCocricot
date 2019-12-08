@@ -1,0 +1,25 @@
+{
+  "variants": {
+    "type=white": {
+      "model": "cocricotlite:nature/flower_pot_white"
+    },
+    "type=light_brown": {
+      "model": "cocricotlite:nature/flower_pot_light_brown"
+    },
+    "type=brown": {
+      "model": "cocricotlite:nature/flower_pot_brown"
+    },
+    "type=dark_orange": {
+      "model": "cocricotlite:nature/flower_pot_dark_orange"
+    },
+    "type=black": {
+      "model": "cocricotlite:nature/flower_pot_black"
+    },
+    "type=basket_light": {
+      "model": "cocricotlite:nature/flower_pot_basket_light"
+    },
+    "type=basket": {
+      "model": "cocricotlite:nature/flower_pot_basket"
+    }
+  }
+}

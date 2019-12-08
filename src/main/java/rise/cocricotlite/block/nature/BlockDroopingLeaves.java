@@ -16,9 +16,9 @@ import rise.cocricotlite.util.Helper;
 import rise.cocricotlite.util.type.EnumDroopingLeaves;
 import rise.cocricotlite.util.type.PropertyList;
 
-public class BlockDroppingLeaves extends BaseBlock {
+public class BlockDroopingLeaves extends BaseBlock {
 
-    public BlockDroppingLeaves()
+    public BlockDroopingLeaves()
     {
         super("drooping_leaves", Material.GRASS, Tabs.TAB_NATURE, SoundType.PLANT, 0.2F, 1F);
         this.setCollisionBox(AABBList.AABB_NONE);
@@ -29,7 +29,15 @@ public class BlockDroppingLeaves extends BaseBlock {
     @Override
     public void registerModels()
     {
-        Helper.forItemModels(this, 2, "nature", new String[]{"green", "light_green", "dark_green"});
+        Helper.forItemModels(this, "nature", EnumDroopingLeaves.class, EnumDroopingLeaves.values().length);
+
+//        for(int i = 0; i < EnumDroopingLeaves.values().length; ++i)
+//        {
+//            String name = Helper.valueOf(EnumDroopingLeaves.class, i).getName();
+//            CocricotLite.proxy.registerItemModel(Item.getItemFromBlock(this), i, new ModelResourceLocation("cocricotlite:" + "nature" + "/" + this.getUnlocalizedName().substring(5) + "_" + name, "inventory"));
+//        }
+
+//        Helper.forItemModels(this, 2, "nature", new String[]{"green", "light_green", "dark_green"});
     }
 
     public int damageDropped(IBlockState state)

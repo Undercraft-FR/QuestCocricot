@@ -32,4 +32,38 @@ tile.pancake.berry.name=Berry Pancake
 tile.pancake.chocolate_banana.name=Chocolate Banana Pancake
 tile.pancake.chocolate_berry.name=Chocolate Berry Pancake
 
+#NATURE
+tile.drooping_leaves.green.name=Green Drooping Leaves
+tile.drooping_leaves.light_green.name=Light Green Drooping Leaves
+tile.drooping_leaves.dark_green.name=Dark Green Drooping Leaves
+tile.planting_green.umbellata.name=Umbellata Planting
+tile.planting_green.tupidanthus.name=Tupidanthus Planting
+tile.planting_green.sansevieria.name=Sansevieria Planting
+tile.planting_green.olive.name=Olive Planting
+tile.planting_green.benjamin.name=Benjamin Planting
+tile.planting_green.gold_crest.name=Gold Crest Planting
+tile.planting_green.wild_banana.name=Wild Banana Planting
+tile.planting_green.pachira.name=Pachira Planting
+tile.planting_green.yucca.name=Yucca Planting
+tile.planting_green.dypsis_lutescens.name=Dypsis Lutescens Planting
+tile.planting_green.cactus.name=Cactus Planting
+tile.flower_pot.white.name=White Flower Pot
+tile.flower_pot.light_brown.name=Light Brown Flower Pot
+tile.flower_pot.brown.name=Brown Flower Pot
+tile.flower_pot.dark_orange.name=Dark Orange Flower Pot
+tile.flower_pot.black.name=Black Flower Pot
+tile.flower_pot.basket_light.name=Basket Light Flower Pot
+tile.flower_pot.basket.name=Basket Flower Pot
+tile.flower_pot_big.white.name=Big White Flower Pot
+tile.flower_pot_big.light_brown.name=Big Light Brown Flower Pot
+tile.flower_pot_big.brown.name=Big Brown Flower Pot
+tile.flower_pot_big.dark_orange.name=Big Dark Orange Flower Pot
+tile.flower_pot_big.black.name=Big Black Flower Pot
+tile.flower_pot_big.basket_light.name=Big Basket Light Flower Pot
+tile.flower_pot_big.basket.name=Big Basket Flower Pot
+
+
+
+
+
 

@@ -32,4 +32,35 @@ tile.pancake.berry.name=ベリーパンケーキ
 tile.pancake.chocolate_banana.name=チョコバナナパンケーキ
 tile.pancake.chocolate_berry.name=チョコベリーパンケーキ
 
+#NATURE
+tile.drooping_leaves.green.name=吊り下げられた緑の葉
+tile.drooping_leaves.light_green.name=吊り下げられた黄緑の葉
+tile.drooping_leaves.dark_green.name=吊り下げられた青緑の葉
+tile.planting_green.umbellata.name=ウンベラータの植木
+tile.planting_green.tupidanthus.name=ツピタンサスの植木
+tile.planting_green.sansevieria.name=サンセベリアの植木
+tile.planting_green.olive.name=オリーブの植木
+tile.planting_green.benjamin.name=ベンジャミンの植木
+tile.planting_green.gold_crest.name=ゴールドクレストの植木
+tile.planting_green.wild_banana.name=ワイルドバナナの植木
+tile.planting_green.pachira.name=パキラの植木
+tile.planting_green.yucca.name=ユッカの植木
+tile.planting_green.dypsis_lutescens.name=アレカヤシの植木
+tile.planting_green.cactus.name=サボテンの植木
+tile.flower_pot.white.name=白い植木鉢
+tile.flower_pot.light_brown.name=淡い茶色の植木鉢
+tile.flower_pot.brown.name=茶色い植木鉢
+tile.flower_pot.dark_orange.name=オレンジの植木鉢
+tile.flower_pot.black.name=黒い植木鉢
+tile.flower_pot.basket_light.name=白い植木バスケット
+tile.flower_pot.basket.name=植木バスケット
+tile.flower_pot_big.white.name=大きな白い植木鉢
+tile.flower_pot_big.light_brown.name=大きな淡い茶色の植木鉢
+tile.flower_pot_big.brown.name=大きな茶色い植木鉢
+tile.flower_pot_big.dark_orange.name=大きなオレンジの植木鉢
+tile.flower_pot_big.black.name=大きな黒い植木鉢
+tile.flower_pot_big.basket_light.name=大きな白い植木バスケット
+tile.flower_pot_big.basket.name=大きな植木バスケット
+
+
 

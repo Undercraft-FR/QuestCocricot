@@ -1,0 +1,6 @@
+{
+    "parent": "cocricotlite:block/nature/flower_pot",
+    "textures": {
+  		"texture": "cocricotlite:nature/flower_pot_dark_orange"
+    }
+}

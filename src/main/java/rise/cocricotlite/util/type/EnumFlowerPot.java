@@ -1,19 +1,22 @@
 package rise.cocricotlite.util.type;
 
 import net.minecraft.util.IStringSerializable;
-import rise.cocricotlite.util.IMetadata;
 
-public enum EnumDroopingLeaves implements IStringSerializable, IMetadata {
+public enum EnumFlowerPot implements IStringSerializable {
 
-    GREEN(0, "green"),
-    LIGHT_GREEN(1, "light_green"),
-    DARK_GREEN(2, "dark_green");
+    WHITE(0, "white"),
+    LIGHT_BROWN(1, "light_brown"),
+    BROWN(2, "brown"),
+    DARK_ORANGE(3, "dark_orange"),
+    BLACK(4, "black"),
+    BASKET_LIGHT(5, "basket_light"),
+    BASKET(6, "basket");
 
-    private static final EnumDroopingLeaves[] META_LOOKUP = new EnumDroopingLeaves[values().length];
+    private static final EnumFlowerPot[] META_LOOKUP = new EnumFlowerPot[values().length];
     private final int meta;
     private final String name;
 
-    EnumDroopingLeaves(int meta, String name)
+    EnumFlowerPot(int meta, String name)
     {
         this.meta = meta;
         this.name = name;
@@ -29,7 +32,7 @@ public enum EnumDroopingLeaves implements IStringSerializable, IMetadata {
         return this.name;
     }
 
-    public static EnumDroopingLeaves byMetadata(int meta)
+    public static EnumFlowerPot byMetadata(int meta)
     {
         if(meta < 0 || meta >= META_LOOKUP.length)
         {
@@ -46,9 +49,9 @@ public enum EnumDroopingLeaves implements IStringSerializable, IMetadata {
 
     static
     {
-        EnumDroopingLeaves[] var = values();
+        EnumFlowerPot[] var = values();
 
-        for(EnumDroopingLeaves type : var)
+        for(EnumFlowerPot type : var)
         {
             META_LOOKUP[type.getMetadata()] = type;
         }
