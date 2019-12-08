@@ -58,7 +58,7 @@ public class BlockWindowBox extends BaseFacing {
 
         LogHelper.debugInfoLog("getStateForPlacement:: " + meta + ", Horizontal Facing: " + horizontal) ;
 
-        meta = meta << 2 + horizontal;
+        meta = (meta << 2) + horizontal;
         return super.getStateForPlacement(world, pos, placer.getHorizontalFacing().getOpposite(), hitX, hitY, hitZ, meta, placer, hand);
 
     }
