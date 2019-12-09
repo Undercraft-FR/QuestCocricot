@@ -5,7 +5,6 @@ import net.minecraft.block.material.Material;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;
 import rise.cocricotlite.Tabs;
@@ -29,7 +28,7 @@ public class BlockPizza extends BaseBlock {
     @Override
     public void registerModels()
     {
-        Helper.forItemModels(this, 1, "dish", new String[] { "margherita", "quattro_formaggi" });
+        Helper.forItemModels(this, "dish", EnumPizza.class, EnumPizza.values().length);
     }
 
     public int damageDropped(IBlockState state)
@@ -39,12 +38,8 @@ public class BlockPizza extends BaseBlock {
 
     public void getSubBlocks(CreativeTabs tab, NonNullList<ItemStack> list)
     {
-        Item item = Item.getItemFromBlock(this);
+        Helper.forItemModels(this, "dish", EnumPizza.class, EnumPizza.values().length);
 
-        for(int meta = 0; meta < EnumPizza.values().length; ++meta)
-        {
-            list.add(new ItemStack(item, 1, meta));
-        }
     }
 
     public IBlockState getStateFromMeta(int meta)

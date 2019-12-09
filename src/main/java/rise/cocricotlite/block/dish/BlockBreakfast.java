@@ -6,7 +6,6 @@ import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
@@ -34,7 +33,7 @@ public class BlockBreakfast extends BaseFacing {
     @Override
     public void registerModels()
     {
-        Helper.forItemModels(this, 1, "dish", new String[] { "toast", "croissant" });
+        Helper.forItemModels(this, "dish", EnumBreakfast.class, EnumBreakfast.values().length);
     }
 
     public int damageDropped(IBlockState state)
@@ -44,12 +43,8 @@ public class BlockBreakfast extends BaseFacing {
 
     public void getSubBlocks(CreativeTabs tab, NonNullList<ItemStack> list)
     {
-        Item item = Item.getItemFromBlock(this);
+        Helper.forCreativeTab(this, list, EnumBreakfast.values().length);
 
-        for(int meta = 0; meta < EnumBreakfast.values().length; ++meta)
-        {
-            list.add(new ItemStack(item, 1, meta));
-        }
     }
     /** ブロック設置時にbit作る */
     public IBlockState getStateForPlacement(World world, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer, EnumHand hand)

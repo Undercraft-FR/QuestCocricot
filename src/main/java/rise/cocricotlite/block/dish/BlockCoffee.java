@@ -6,7 +6,6 @@ import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
@@ -18,7 +17,6 @@ import rise.cocricotlite.block.BaseFacing;
 import rise.cocricotlite.item.CommonItemBlock;
 import rise.cocricotlite.util.AABBList;
 import rise.cocricotlite.util.Helper;
-import rise.cocricotlite.util.LogHelper;
 import rise.cocricotlite.util.type.EnumSingleDouble;
 import rise.cocricotlite.util.type.PropertyList;
 
@@ -44,7 +42,7 @@ public class BlockCoffee extends BaseFacing
     @Override
     public void registerModels()
     {
-        Helper.forItemModels(this, 1, "dish", new String[]{"single", "double"});
+        Helper.forItemModels(this, "dish", EnumSingleDouble.class, EnumSingleDouble.values().length);
     }
 
     public int damageDropped(IBlockState state)
@@ -54,12 +52,8 @@ public class BlockCoffee extends BaseFacing
 
     public void getSubBlocks(CreativeTabs tab, NonNullList<ItemStack> list)
     {
-        Item item = Item.getItemFromBlock(this);
+        Helper.forCreativeTab(this, list, EnumSingleDouble.values().length);
 
-        for (int meta = 0; meta < EnumSingleDouble.values().length; ++meta)
-        {
-            list.add(new ItemStack(item, 1, meta));
-        }
     }
 
     //ブロックに与えられたメタが帰ってくる(0~7 getStateForPlacement)

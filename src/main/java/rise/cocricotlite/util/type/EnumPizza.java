@@ -1,8 +1,9 @@
 package rise.cocricotlite.util.type;
 
 import net.minecraft.util.IStringSerializable;
+import rise.cocricotlite.util.IMetadata;
 
-public enum EnumPizza implements IStringSerializable {
+public enum EnumPizza implements IStringSerializable, IMetadata {
 
     MARGHERITA(0, "margherita"),
     QUATTRO_FORMAGGI(1, "quattro_formaggi");

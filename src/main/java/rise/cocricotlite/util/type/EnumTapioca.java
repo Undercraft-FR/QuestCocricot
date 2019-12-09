@@ -1,8 +1,9 @@
 package rise.cocricotlite.util.type;
 
 import net.minecraft.util.IStringSerializable;
+import rise.cocricotlite.util.IMetadata;
 
-public enum EnumTapioca implements IStringSerializable {
+public enum EnumTapioca implements IStringSerializable, IMetadata {
 
     CAFE_LATTE(0, "cafe_latte"),
     MILK_TEA(1, "milk_tea"),

@@ -1,8 +1,9 @@
 package rise.cocricotlite.util.type;
 
 import net.minecraft.util.IStringSerializable;
+import rise.cocricotlite.util.IMetadata;
 
-public enum EnumWallLeaves implements IStringSerializable {
+public enum EnumWallLeaves implements IStringSerializable, IMetadata {
 
     CLIMBING(0, "climbing"),
     IVY_UP(1, "ivy_up"),

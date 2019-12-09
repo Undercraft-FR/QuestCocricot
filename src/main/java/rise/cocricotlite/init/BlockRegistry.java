@@ -45,11 +45,12 @@ public class BlockRegistry {
 
         //NATURE
         CBlocks.DROOPING_LEAVES = new BlockDroopingLeaves();
-//        CBlocks.WALL_LEAVES = new BlockWallLeaves();
+        CBlocks.WALL_LEAVES = new BlockWallLeaves();
         CBlocks.PLANTING_GREEN = new BlockPlantingGreen();
         CBlocks.FLOWER_POT = new BlockFlowerPot("flower_pot");
         CBlocks.FLOWER_POT_BIG = new BlockFlowerPot("flower_pot_big");
         CBlocks.VASE = new BlockVase();
         CBlocks.WINDOW_BOX = new BlockWindowBox();
+        CBlocks.HANGING_PLANT = new BlockHangingPlant();
     }
 }

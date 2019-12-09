@@ -6,18 +6,18 @@ import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.NonNullList;
+import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import rise.cocricotlite.Tabs;
 import rise.cocricotlite.block.BaseFacing;
 import rise.cocricotlite.item.CommonItemBlock;
 import rise.cocricotlite.util.Helper;
-import rise.cocricotlite.util.LogHelper;
 import rise.cocricotlite.util.type.EnumWindowBox;
 import rise.cocricotlite.util.type.PropertyList;
 
@@ -43,46 +43,54 @@ public class BlockWindowBox extends BaseFacing {
 
     public void getSubBlocks(CreativeTabs tab, NonNullList<ItemStack> list)
     {
-        Item item = Item.getItemFromBlock(this);
-
-        for(int meta = 0; meta < EnumWindowBox.values().length; ++meta)
-        {
-            list.add(new ItemStack(item, 1, meta));
-        }
+        Helper.forCreativeTab(this, list, EnumWindowBox.values().length);
     }
 
-    /** ブロック設置時にbit作る */
+    public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos)
+    {
+        AxisAlignedBB aabb;
+
+        switch (state.getValue(FACING))
+        {
+            case NORTH:
+            default:
+                aabb = new AxisAlignedBB(0.0D, 1.0D, 0.5D, 1.0D, 0.0D, 1.0D);
+                break;
+            case SOUTH:
+                aabb = new AxisAlignedBB(0.0D, 1.0D, 0.0D, 1.0D, 0.0D, 0.5D);
+                break;
+            case WEST:
+                aabb = new AxisAlignedBB(0.5D, 1.0D, 0.0D, 1.0D, 0.0D, 1.0D);
+                break;
+            case EAST:
+                aabb = new AxisAlignedBB(0.0D, 1.0D, 0.0D, 0.5D, 0.0D, 1.0D);
+        }
+
+        return aabb;
+    }
+
     public IBlockState getStateForPlacement(World world, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer, EnumHand hand)
     {
         int horizontal = placer.getHorizontalFacing().getOpposite().getIndex() - 2;
-
-        LogHelper.debugInfoLog("getStateForPlacement:: " + meta + ", Horizontal Facing: " + horizontal) ;
-
         meta = (meta << 2) + horizontal;
+
         return super.getStateForPlacement(world, pos, placer.getHorizontalFacing().getOpposite(), hitX, hitY, hitZ, meta, placer, hand);
 
     }
 
-    /** 保存時にBlockStateにメタを突っ込む */
     public IBlockState getStateFromMeta(int meta)
     {
-        LogHelper.debugInfoLog("getStateFromMeta ::  meta:"+ meta);
         IBlockState state = this.getDefaultState().withProperty(FACING, EnumFacing.getHorizontal(meta & 3));
-
         state = state.withProperty(PropertyList.WINDOW_BOX_TYPE, EnumWindowBox.byMetadata((meta & 12) >> 2));
-        LogHelper.debugInfoLog("getStateFromMeta :: " + state);
 
         return state;
     }
 
-    /** 読み込み時にメタからBlockStateを剥ぎ取る */
     public int getMetaFromState(IBlockState state)
     {
         int i = 0;
         i += state.getValue(FACING).getHorizontalIndex();
         i += state.getValue(PropertyList.WINDOW_BOX_TYPE).getMetadata() << 2;
-
-        LogHelper.debugInfoLog("getMetaFromState " + ":: FACING: " + state.getValue(FACING).getHorizontalIndex() + ", Type: " + state.getValue(PropertyList.WINDOW_BOX_TYPE).getMetadata() + ", Current Meta: " + i);
 
         return i;
     }

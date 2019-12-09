@@ -1,8 +1,9 @@
 package rise.cocricotlite.util.type;
 
 import net.minecraft.util.IStringSerializable;
+import rise.cocricotlite.util.IMetadata;
 
-public enum EnumBreakfast implements IStringSerializable {
+public enum EnumBreakfast implements IStringSerializable, IMetadata {
 
     TOAST(0, "toast"),
     CROISSANT(1, "croissant");

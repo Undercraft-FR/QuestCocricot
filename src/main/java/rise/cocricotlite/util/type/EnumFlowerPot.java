@@ -1,8 +1,9 @@
 package rise.cocricotlite.util.type;
 
 import net.minecraft.util.IStringSerializable;
+import rise.cocricotlite.util.IMetadata;
 
-public enum EnumFlowerPot implements IStringSerializable {
+public enum EnumFlowerPot implements IStringSerializable, IMetadata {
 
     WHITE(0, "white"),
     LIGHT_BROWN(1, "light_brown"),

@@ -4,10 +4,13 @@ import net.minecraft.block.Block;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
+import net.minecraft.item.ItemStack;
 import net.minecraft.util.IStringSerializable;
+import net.minecraft.util.NonNullList;
 import net.minecraftforge.fml.common.registry.ForgeRegistries;
 import rise.cocricotlite.CocricotLite;
 
+import javax.annotation.Nonnull;
 import java.util.Arrays;
 import java.util.Objects;
 
@@ -59,22 +62,6 @@ public class Helper {
     }
 
     /**
-     * メタの分だけアイテムのモデルを追加する処理を繰り返す。
-     * @param block ブロック
-     * @param maxMeta 最大メタ値(個数ではない! 最高15まで)
-     * @param category モデルが格納されたフォルダパス
-     * @param typeName メタごとに振り分けられた名前
-     */
-    @Deprecated
-    public static void forItemModels(Block block, int maxMeta, String category, String[] typeName)
-    {
-        for(int i = 0; i < maxMeta + 1; ++i)
-        {
-            CocricotLite.proxy.registerItemModel(Item.getItemFromBlock(block), i, new ModelResourceLocation("cocricotlite:" + category + "/" + block.getUnlocalizedName().substring(5) + "_" + typeName[i], "inventory"));
-        }
-    }
-
-    /**
      * 指定したenumの数だけアイテムのモデルを追加する処理を繰り返す。
      * @param block ブロック
      * @param category モデルが格納されたフォルダパス
@@ -104,5 +91,35 @@ public class Helper {
                 .filter(data -> data.getMetadata() == meta)
                 .findFirst()
                 .orElse(null);
+    }
+
+    /**
+     * メタの数だけタブに登録する処理を繰り返す
+     * @param target ブロックまたはアイテム
+     * @param list リスト
+     * @param meta メタ
+     */
+    public static void forCreativeTab(Object target, NonNullList<ItemStack> list, int meta)
+    {
+        if(target instanceof Block)
+        {
+            Block block = (Block) target;
+            Item.getItemFromBlock(block);
+
+            for(int i = 0; i < meta; ++i)
+            {
+                list.add(new ItemStack(block, 1, i));
+            }
+        }
+
+        if(target instanceof Item)
+        {
+            Item item = (Item) target;
+
+            for(int i = 0; i < meta; ++i)
+            {
+                list.add(new ItemStack(item, 1, i));
+            }
+        }
     }
 }

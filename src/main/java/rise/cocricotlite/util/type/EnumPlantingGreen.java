@@ -1,8 +1,9 @@
 package rise.cocricotlite.util.type;
 
 import net.minecraft.util.IStringSerializable;
+import rise.cocricotlite.util.IMetadata;
 
-public enum EnumPlantingGreen implements IStringSerializable {
+public enum EnumPlantingGreen implements IStringSerializable, IMetadata {
 
     UMBELLATA(0, "umbellata"),
     TUPIDANTHUS(1, "tupidanthus"),

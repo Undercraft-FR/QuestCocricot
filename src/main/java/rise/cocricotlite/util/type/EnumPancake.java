@@ -1,8 +1,9 @@
 package rise.cocricotlite.util.type;
 
 import net.minecraft.util.IStringSerializable;
+import rise.cocricotlite.util.IMetadata;
 
-public enum EnumPancake implements IStringSerializable {
+public enum EnumPancake implements IStringSerializable, IMetadata {
 
     BUTTER(0, "butter"),
     BERRY(1, "berry"),

@@ -1,3 +1,6 @@
 {
-  "parent": "cocricotlite:block/nature/drooping_leaves_light_green"
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "cocricotlite:nature/drooping_leaves_light_green"
+  }
 }

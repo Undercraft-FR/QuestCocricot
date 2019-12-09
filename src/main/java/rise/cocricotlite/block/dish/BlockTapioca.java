@@ -5,7 +5,6 @@ import net.minecraft.block.material.Material;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;
 import rise.cocricotlite.Tabs;
@@ -29,7 +28,7 @@ public class BlockTapioca extends BaseBlock {
     @Override
     public void registerModels()
     {
-        Helper.forItemModels(this, 4, "dish", new String[] { "cafe_latte", "milk_tea", "matcha", "matcha_tea", "strawberry_milk" });
+        Helper.forItemModels(this, "dish", EnumTapioca.class, EnumTapioca.values().length);
     }
 
     public int damageDropped(IBlockState state)
@@ -39,12 +38,8 @@ public class BlockTapioca extends BaseBlock {
 
     public void getSubBlocks(CreativeTabs tab, NonNullList<ItemStack> list)
     {
-        Item item = Item.getItemFromBlock(this);
+        Helper.forCreativeTab(this, list, EnumTapioca.values().length);
 
-        for(int meta = 0; meta < EnumTapioca.values().length; ++meta)
-        {
-            list.add(new ItemStack(item, 1, meta));
-        }
     }
 
     public IBlockState getStateFromMeta(int meta)

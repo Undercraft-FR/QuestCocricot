@@ -1,8 +1,9 @@
 package rise.cocricotlite.util.type;
 
 import net.minecraft.util.IStringSerializable;
+import rise.cocricotlite.util.IMetadata;
 
-public enum EnumChampagne implements IStringSerializable {
+public enum EnumChampagne implements IStringSerializable, IMetadata {
 
     SINGLE(0, "single"),
     DOUBLE(1, "double"),

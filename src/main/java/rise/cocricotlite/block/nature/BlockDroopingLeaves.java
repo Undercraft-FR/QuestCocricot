@@ -5,7 +5,6 @@ import net.minecraft.block.material.Material;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;
 import rise.cocricotlite.Tabs;
@@ -30,14 +29,6 @@ public class BlockDroopingLeaves extends BaseBlock {
     public void registerModels()
     {
         Helper.forItemModels(this, "nature", EnumDroopingLeaves.class, EnumDroopingLeaves.values().length);
-
-//        for(int i = 0; i < EnumDroopingLeaves.values().length; ++i)
-//        {
-//            String name = Helper.valueOf(EnumDroopingLeaves.class, i).getName();
-//            CocricotLite.proxy.registerItemModel(Item.getItemFromBlock(this), i, new ModelResourceLocation("cocricotlite:" + "nature" + "/" + this.getUnlocalizedName().substring(5) + "_" + name, "inventory"));
-//        }
-
-//        Helper.forItemModels(this, 2, "nature", new String[]{"green", "light_green", "dark_green"});
     }
 
     public int damageDropped(IBlockState state)
@@ -47,12 +38,8 @@ public class BlockDroopingLeaves extends BaseBlock {
 
     public void getSubBlocks(CreativeTabs tab, NonNullList<ItemStack> list)
     {
-        Item item = Item.getItemFromBlock(this);
+        Helper.forCreativeTab(this, list, EnumDroopingLeaves.values().length);
 
-        for (int meta = 0; meta < EnumDroopingLeaves.values().length; ++meta)
-        {
-            list.add(new ItemStack(item, 1, meta));
-        }
     }
 
     public IBlockState getStateFromMeta(int meta)

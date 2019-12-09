@@ -5,7 +5,6 @@ import net.minecraft.block.material.Material;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;
 import rise.cocricotlite.Tabs;
@@ -30,7 +29,7 @@ public class BlockPlantingGreen extends BaseBlock {
     @Override
     public void registerModels()
     {
-        Helper.forItemModels(this, 10, "nature", new String[]{"umbellata", "tupidanthus", "sansevieria", "olive", "benjamin", "gold_crest", "wild_banana", "pachira", "yucca", "dypsis_lutescens", "cactus" });
+        Helper.forItemModels(this, "nature", EnumPlantingGreen.class, EnumPlantingGreen.values().length);
     }
 
     public int damageDropped(IBlockState state)
@@ -40,12 +39,8 @@ public class BlockPlantingGreen extends BaseBlock {
 
     public void getSubBlocks(CreativeTabs tab, NonNullList<ItemStack> list)
     {
-        Item item = Item.getItemFromBlock(this);
+        Helper.forCreativeTab(this, list, EnumPlantingGreen.values().length);
 
-        for (int meta = 0; meta < EnumPlantingGreen.values().length; ++meta)
-        {
-            list.add(new ItemStack(item, 1, meta));
-        }
     }
 
     public IBlockState getStateFromMeta(int meta)

@@ -5,7 +5,6 @@ import net.minecraft.block.material.Material;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;
 import rise.cocricotlite.Tabs;
@@ -29,7 +28,7 @@ public class BlockFlowerPot extends BaseBlock {
     @Override
     public void registerModels()
     {
-        Helper.forItemModels(this, 6, "nature", new String[]{ "white", "light_brown", "brown", "dark_orange", "black", "basket_light", "basket" });
+        Helper.forItemModels(this, "nature", EnumFlowerPot.class, EnumFlowerPot.values().length);
     }
 
     public int damageDropped(IBlockState state)
@@ -39,12 +38,8 @@ public class BlockFlowerPot extends BaseBlock {
 
     public void getSubBlocks(CreativeTabs tab, NonNullList<ItemStack> list)
     {
-        Item item = Item.getItemFromBlock(this);
+        Helper.forCreativeTab(this, list, EnumFlowerPot.values().length);
 
-        for (int meta = 0; meta < EnumFlowerPot.values().length; ++meta)
-        {
-            list.add(new ItemStack(item, 1, meta));
-        }
     }
 
     public IBlockState getStateFromMeta(int meta)
