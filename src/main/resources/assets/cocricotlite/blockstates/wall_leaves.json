@@ -1,0 +1,49 @@
+{
+  "variants": {
+    "facing=north,type=climbing": {
+      "model": "cocricotlite:nature/wall_leaves_climbing"
+    },
+    "facing=east,type=climbing": {
+      "model": "cocricotlite:nature/wall_leaves_climbing",
+      "y": 90
+    },
+    "facing=south,type=climbing": {
+      "model": "cocricotlite:nature/wall_leaves_climbing",
+      "y": 180
+    },
+    "facing=west,type=climbing": {
+      "model": "cocricotlite:nature/wall_leaves_climbing",
+      "y": 270
+    },
+    "facing=north,type=ivy_down": {
+      "model": "cocricotlite:nature/wall_leaves_ivy_down"
+    },
+    "facing=east,type=ivy_down": {
+      "model": "cocricotlite:nature/wall_leaves_ivy_down",
+      "y": 90
+    },
+    "facing=south,type=ivy_down": {
+      "model": "cocricotlite:nature/wall_leaves_ivy_down",
+      "y": 180
+    },
+    "facing=west,type=ivy_down": {
+      "model": "cocricotlite:nature/wall_leaves_ivy_down",
+      "y": 270
+    },
+    "facing=north,type=ivy_up": {
+      "model": "cocricotlite:nature/wall_leaves_ivy_up"
+    },
+    "facing=east,type=ivy_up": {
+      "model": "cocricotlite:nature/wall_leaves_ivy_up",
+      "y": 90
+    },
+    "facing=south,type=ivy_up": {
+      "model": "cocricotlite:nature/wall_leaves_ivy_up",
+      "y": 180
+    },
+    "facing=west,type=ivy_up": {
+      "model": "cocricotlite:nature/wall_leaves_ivy_up",
+      "y": 270
+    }
+  }
+}

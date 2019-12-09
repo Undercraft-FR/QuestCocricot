@@ -1,0 +1,6 @@
+{
+    "parent": "cocricotlite:block/nature/wall_ornament",
+    "textures": {
+        "texture": "cocricotlite:nature/wall_leaves_climbing"
+    }
+}

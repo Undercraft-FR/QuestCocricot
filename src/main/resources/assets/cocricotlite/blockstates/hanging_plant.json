@@ -1,0 +1,24 @@
+{
+  "variants": {
+    "type=basket": {
+      "model": "cocricotlite:nature/hpb"
+    },
+    "type=flower": [
+      {
+        "model": "cocricotlite:nature/hpf0"
+      },
+      {
+        "model": "cocricotlite:nature/hpf1"
+      },
+      {
+        "model": "cocricotlite:nature/hpf2"
+      },
+      {
+        "model": "cocricotlite:nature/hpf3"
+      },
+      {
+        "model": "cocricotlite:nature/hpf4"
+      }
+    ]
+  }
+}

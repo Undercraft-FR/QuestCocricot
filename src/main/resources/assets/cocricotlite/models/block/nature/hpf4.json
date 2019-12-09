@@ -1,0 +1,6 @@
+{
+    "parent": "block/cross",
+    "textures": {
+        "cross": "cocricotlite:nature/hpf4"
+    }
+}
