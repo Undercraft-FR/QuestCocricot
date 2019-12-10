@@ -6,27 +6,31 @@ import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
+import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.EnumFacing;
-import net.minecraft.util.EnumHand;
 import net.minecraft.util.NonNullList;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import rise.cocricotlite.Tabs;
-import rise.cocricotlite.block.BaseFacing;
+import rise.cocricotlite.block.BaseFacingTile;
 import rise.cocricotlite.item.CommonItemBlock;
+import rise.cocricotlite.tileentity.TileEntityWindoxBox;
 import rise.cocricotlite.util.Helper;
 import rise.cocricotlite.util.type.EnumWindowBox;
 import rise.cocricotlite.util.type.PropertyList;
 
-public class BlockWindowBox extends BaseFacing {
+import javax.annotation.Nullable;
+
+public class BlockWindowBox extends BaseFacingTile {
 
     public BlockWindowBox()
     {
         super("window_box", Material.WOOD, Tabs.TAB_NATURE, SoundType.WOOD, 1.5F, 3F);
-        this.setDefaultState(this.getBlockState().getBaseState().withProperty(PropertyList.WINDOW_BOX_TYPE, EnumWindowBox.WHITE).withProperty(FACING, EnumFacing.NORTH));
+        this.setDefaultState(this.getBlockState().getBaseState().withProperty(FACING, EnumFacing.NORTH));
         this.register(new CommonItemBlock(this, itemStack -> EnumWindowBox.byMetadata(itemStack.getMetadata()).getName()));
     }
 
@@ -36,10 +40,12 @@ public class BlockWindowBox extends BaseFacing {
         Helper.forItemModels(this, "nature", EnumWindowBox.class, EnumWindowBox.values().length);
     }
 
+    /*
     public int damageDropped(IBlockState state)
     {
         return state.getValue(PropertyList.WINDOW_BOX_TYPE).getMetadata();
     }
+    */
 
     public void getSubBlocks(CreativeTabs tab, NonNullList<ItemStack> list)
     {
@@ -69,36 +75,52 @@ public class BlockWindowBox extends BaseFacing {
         return aabb;
     }
 
-    public IBlockState getStateForPlacement(World world, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer, EnumHand hand)
+    public IBlockState getActualState(IBlockState state, IBlockAccess world, BlockPos pos)
     {
-        int horizontal = placer.getHorizontalFacing().getOpposite().getIndex() - 2;
-        meta = (meta << 2) + horizontal;
+        TileEntity tile = world.getTileEntity(pos);
 
-        return super.getStateForPlacement(world, pos, placer.getHorizontalFacing().getOpposite(), hitX, hitY, hitZ, meta, placer, hand);
-
-    }
-
-    public IBlockState getStateFromMeta(int meta)
-    {
-        IBlockState state = this.getDefaultState().withProperty(FACING, EnumFacing.getHorizontal(meta & 3));
-        state = state.withProperty(PropertyList.WINDOW_BOX_TYPE, EnumWindowBox.byMetadata((meta & 12) >> 2));
+        if(tile instanceof TileEntityWindoxBox)
+        {
+            state = state.withProperty(PropertyList.WINDOW_BOX_TYPE, ((TileEntityWindoxBox) tile).getType());
+        }
 
         return state;
     }
 
-    public int getMetaFromState(IBlockState state)
+    public void harvestBlock(World worldIn, EntityPlayer player, BlockPos pos, IBlockState state, @Nullable TileEntity tileEntity, ItemStack stack)
     {
-        int i = 0;
-        i += state.getValue(FACING).getHorizontalIndex();
-        i += state.getValue(PropertyList.WINDOW_BOX_TYPE).getMetadata() << 2;
+        if(tileEntity instanceof TileEntityWindoxBox)
+        {
+            TileEntityWindoxBox tile = (TileEntityWindoxBox) tileEntity;
+            ItemStack itemStack = new ItemStack(this, 1, tile.getType().getMetadata());
+            spawnAsEntity(worldIn, pos, itemStack);
+        }
+        else
+        {
+            super.harvestBlock(worldIn, player, pos, state, tileEntity, stack);
+        }
+    }
 
-        return i;
+    public void onBlockPlacedBy(World worldIn, BlockPos pos, IBlockState state, EntityLivingBase placer, ItemStack stack)
+    {
+        super.onBlockPlacedBy(worldIn, pos, state, placer, stack);
+        TileEntity tile = worldIn.getTileEntity(pos);
+
+        if(tile instanceof TileEntityWindoxBox)
+        {
+            ((TileEntityWindoxBox) tile).setType(EnumWindowBox.byMetadata(stack.getMetadata()));
+        }
+    }
+
+    public TileEntity createNewTileEntity(World worldIn, int meta)
+    {
+        return new TileEntityWindoxBox();
     }
 
     @Override
     protected BlockStateContainer createBlockState()
     {
-        return new BlockStateContainer(this, PropertyList.WINDOW_BOX_TYPE, FACING);
+        return new BlockStateContainer(this, PropertyList.WINDOW_BOX_TYPE_OLD, FACING);
     }
 
     public boolean isFullCube(IBlockState state)

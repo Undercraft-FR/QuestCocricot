@@ -8,8 +8,8 @@ public enum EnumWindowBox implements IStringSerializable, IMetadata {
     WHITE(0, "white"),
     SEA_DRIFT(1, "sea_drift"),
     NATURAL(2, "natural"),
-    BROWN(3, "brown");
-//    DARK(4, "dark");
+    BROWN(3, "brown"),
+    DARK(4, "dark");
 
     private static final EnumWindowBox[] META_LOOKUP = new EnumWindowBox[values().length];
     private final int meta;

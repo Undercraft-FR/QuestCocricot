@@ -5,9 +5,14 @@ import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
+import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.IStringSerializable;
 import net.minecraft.util.NonNullList;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
 import net.minecraftforge.fml.common.registry.ForgeRegistries;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 import rise.cocricotlite.CocricotLite;
 
 import javax.annotation.Nonnull;
@@ -121,5 +126,15 @@ public class Helper {
                 list.add(new ItemStack(item, 1, i));
             }
         }
+    }
+
+    /**
+     *
+     * @param tileClass タイルエンティティ
+     * @param name 名前
+     */
+    public static void registerTileEntity(Class<? extends TileEntity> tileClass, String name)
+    {
+        GameRegistry.registerTileEntity(tileClass, new ResourceLocation(CocricotLite.MOD_ID, name));
     }
 }

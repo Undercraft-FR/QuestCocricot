@@ -5,12 +5,16 @@ import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
+import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 import rise.cocricotlite.CocricotLite;
 import rise.cocricotlite.Tabs;
 import rise.cocricotlite.block.BaseFacing;
 import rise.cocricotlite.block.dish.*;
 import rise.cocricotlite.block.nature.*;
+import rise.cocricotlite.tileentity.TileEntityWindoxBox;
 import rise.cocricotlite.util.AABBList;
+import rise.cocricotlite.util.Helper;
 
 public class BlockRegistry {
 
@@ -51,6 +55,7 @@ public class BlockRegistry {
         CBlocks.FLOWER_POT_BIG = new BlockFlowerPot("flower_pot_big");
         CBlocks.VASE = new BlockVase();
         CBlocks.WINDOW_BOX = new BlockWindowBox();
+        Helper.registerTileEntity(TileEntityWindoxBox.class, "window_box");
         CBlocks.HANGING_PLANT = new BlockHangingPlant();
     }
 }
