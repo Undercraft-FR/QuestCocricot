@@ -1,9 +1,9 @@
 package rise.cocricotlite.util;
 
-public interface ITileType<T extends Comparable<T>, V extends T> {
+public interface ITileType<T extends Comparable<T>> {
 
-    V getType();
+    T getType();
 
-    void setType(V type);
+    void setType(T type);
 
 }
