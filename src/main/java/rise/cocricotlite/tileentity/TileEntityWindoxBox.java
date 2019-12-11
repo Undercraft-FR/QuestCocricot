@@ -4,7 +4,7 @@ import net.minecraft.nbt.NBTTagCompound;
 import net.minecraftforge.common.util.Constants;
 import rise.cocricotlite.util.type.EnumWindowBox;
 
-public class TileEntityWindoxBox extends BaseTileEntity {
+public class TileEntityWindoxBox extends BaseTileEntity implements ITileEntity  {
 
     private EnumWindowBox type = EnumWindowBox.WHITE;
 
