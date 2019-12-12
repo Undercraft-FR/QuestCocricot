@@ -40,13 +40,6 @@ public class BlockWindowBox extends BaseFacingTile {
         Helper.forItemModels(this, "nature", EnumWindowBox.class, EnumWindowBox.values().length);
     }
 
-    /*
-    public int damageDropped(IBlockState state)
-    {
-        return state.getValue(PropertyList.WINDOW_BOX_TYPE).getMetadata();
-    }
-    */
-
     public void getSubBlocks(CreativeTabs tab, NonNullList<ItemStack> list)
     {
         Helper.forCreativeTab(this, list, EnumWindowBox.values().length);
@@ -81,7 +74,7 @@ public class BlockWindowBox extends BaseFacingTile {
 
         if(tile instanceof TileEntityWindoxBox)
         {
-            state = state.withProperty(PropertyList.WINDOW_BOX_TYPE, ((TileEntityWindoxBox) tile).getType());
+            return state.withProperty(PropertyList.WINDOW_BOX_TYPE, ((TileEntityWindoxBox) tile).getType());
         }
 
         return state;
@@ -120,7 +113,7 @@ public class BlockWindowBox extends BaseFacingTile {
     @Override
     protected BlockStateContainer createBlockState()
     {
-        return new BlockStateContainer(this, PropertyList.WINDOW_BOX_TYPE_OLD, FACING);
+        return new BlockStateContainer(this, PropertyList.WINDOW_BOX_TYPE, FACING);
     }
 
     public boolean isFullCube(IBlockState state)

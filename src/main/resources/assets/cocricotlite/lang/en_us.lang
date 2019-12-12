@@ -68,6 +68,18 @@ tile.vase.brown.name=Brown Vase
 tile.vase.dark_orange.name=Dark OrangeVase
 tile.vase.black.name=Black Vase
 tile.vase.marine_blue.name=Marine Blue Vase
+tile.window_box.white.name=White Window Box
+tile.window_box.sea_drift.name=Sea Drift Window Box
+tile.window_box.natural.name=Natural Window Box
+tile.window_box.brown.name=Brown Window Box
+tile.window_box.dark.name=Dark Window Box
+tile.hanging_plant.basket.name=Hanging Plant Basket
+tile.hanging_plant.flower.name=Hanging Flower Basket
+tile.mini_tree.limp.name=Limp Leader
+tile.mini_tree.limp_leaves.name=Limp Leader with Leaves
+tile.mini_tree.straight.name=Straight Leader
+tile.mini_tree.straight_leaves.name=Straight Leader with Leaves
+
 
 
 

@@ -68,6 +68,21 @@ tile.vase.brown.name=茶色い壺
 tile.vase.dark_orange.name=オレンジの壺
 tile.vase.black.name=黒い壺
 tile.vase.marine_blue.name=蒼い壺
+tile.window_box.white.name=白い花台
+tile.window_box.sea_drift.name=流木の花台
+tile.window_box.natural.name=ナチュラルな花台
+tile.window_box.brown.name=茶色い花台
+tile.window_box.dark.name=焼き色のついた花台
+tile.hanging_plant.basket.name=緑のバスケット
+tile.hanging_plant.flower.name=ハンギングフラワー
+tile.mini_tree.limp.name=曲がった枝木
+tile.mini_tree.limp_leaves.name=葉のついた曲がった枝木
+tile.mini_tree.straight.name=まっすぐな枝木
+tile.mini_tree.straight_leaves.name=葉のついたまっすぐな枝木
+
+
+
+
 
 
 

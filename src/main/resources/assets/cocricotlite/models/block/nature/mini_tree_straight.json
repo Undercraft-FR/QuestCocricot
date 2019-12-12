@@ -1,0 +1,6 @@
+{
+    "parent": "block/cross",
+    "textures": {
+        "cross": "cocricotlite:nature/mini_tree_straight"
+    }
+}

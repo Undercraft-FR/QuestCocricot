@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "type=limp": {
+      "model": "cocricotlite:nature/mini_tree_limp"
+    },
+    "type=limp_leaves": {
+      "model": "cocricotlite:nature/mini_tree_limp_leaves"
+    },
+    "type=straight": {
+      "model": "cocricotlite:nature/mini_tree_straight"
+    },
+    "type=straight_leaves": {
+      "model": "cocricotlite:nature/mini_tree_straight_leaves"
+    }
+  }
+}

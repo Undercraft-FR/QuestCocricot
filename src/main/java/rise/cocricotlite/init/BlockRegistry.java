@@ -57,5 +57,6 @@ public class BlockRegistry {
         CBlocks.WINDOW_BOX = new BlockWindowBox();
         Helper.registerTileEntity(TileEntityWindoxBox.class, "window_box");
         CBlocks.HANGING_PLANT = new BlockHangingPlant();
+        CBlocks.MINI_TREE = new BlockMiniTree();
     }
 }
