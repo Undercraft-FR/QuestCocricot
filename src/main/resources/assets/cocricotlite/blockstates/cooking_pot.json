@@ -1,0 +1,67 @@
+{
+  "variants": {
+    "type=white": [
+      {
+        "model": "cocricotlite:interior/cooking_pot_white"
+      },
+      {
+        "model": "cocricotlite:interior/cooking_pot_white",
+        "y": 90
+      }
+    ],
+    "type=red": [
+      {
+        "model": "cocricotlite:interior/cooking_pot_red"
+      },
+      {
+        "model": "cocricotlite:interior/cooking_pot_red",
+        "y": 90
+      }
+    ],
+    "type=orange": [
+      {
+        "model": "cocricotlite:interior/cooking_pot_orange"
+      },
+      {
+        "model": "cocricotlite:interior/cooking_pot_orange",
+        "y": 90
+      }
+    ],
+    "type=yellow": [
+      {
+        "model": "cocricotlite:interior/cooking_pot_yellow"
+      },
+      {
+        "model": "cocricotlite:interior/cooking_pot_yellow",
+        "y": 90
+      }
+    ],
+    "type=green": [
+      {
+        "model": "cocricotlite:interior/cooking_pot_green"
+      },
+      {
+        "model": "cocricotlite:interior/cooking_pot_green",
+        "y": 90
+      }
+    ],
+    "type=blue": [
+      {
+        "model": "cocricotlite:interior/cooking_pot_blue"
+      },
+      {
+        "model": "cocricotlite:interior/cooking_pot_blue",
+        "y": 90
+      }
+    ],
+    "type=black": [
+      {
+        "model": "cocricotlite:interior/cooking_pot_black"
+      },
+      {
+        "model": "cocricotlite:interior/cooking_pot_black",
+        "y": 90
+      }
+    ]
+  }
+}

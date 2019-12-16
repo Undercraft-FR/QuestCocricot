@@ -1,0 +1,6 @@
+{
+    "parent": "cocricotlite:block/interior/sample_yellow_tart",
+    "textures": {
+        "2": "cocricotlite:interior/sample_red_tart"
+    }
+}

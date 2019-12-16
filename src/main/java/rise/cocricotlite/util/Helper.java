@@ -66,6 +66,11 @@ public class Helper {
         }
     }
 
+    public static void registerItemModel(Block block, String category, String name)
+    {
+        CocricotLite.proxy.registerItemModel(Item.getItemFromBlock(block), 0, new ModelResourceLocation("cocricotlite:" + category + "/" + name, "inventory"));
+    }
+
     /**
      * 指定したenumの数だけアイテムのモデルを追加する処理を繰り返す。
      * @param block ブロック

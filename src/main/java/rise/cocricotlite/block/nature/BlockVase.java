@@ -11,7 +11,7 @@ import rise.cocricotlite.Tabs;
 import rise.cocricotlite.block.BaseBlock;
 import rise.cocricotlite.item.CommonItemBlock;
 import rise.cocricotlite.util.Helper;
-import rise.cocricotlite.util.type.EnumVase;
+import rise.cocricotlite.util.type.nature.EnumVase;
 import rise.cocricotlite.util.type.PropertyList;
 
 public class BlockVase extends BaseBlock {

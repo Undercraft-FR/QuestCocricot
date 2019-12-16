@@ -1,0 +1,64 @@
+{
+  "variants": {
+    "facing=north,type=easel": {
+      "model": "cocricotlite:interior/menu_easel",
+      "y": 270
+    },
+    "facing=east,type=easel": {
+      "model": "cocricotlite:interior/menu_easel"
+    },
+    "facing=south,type=easel": {
+      "model": "cocricotlite:interior/menu_easel",
+      "y": 90
+    },
+    "facing=west,type=easel": {
+      "model": "cocricotlite:interior/menu_easel",
+      "y": 180
+    },
+    "facing=north,type=easel_white": {
+      "model": "cocricotlite:interior/menu_easel_white",
+      "y": 270
+    },
+    "facing=east,type=easel_white": {
+      "model": "cocricotlite:interior/menu_easel_white"
+    },
+    "facing=south,type=easel_white": {
+      "model": "cocricotlite:interior/menu_easel_white",
+      "y": 90
+    },
+    "facing=west,type=easel_white": {
+      "model": "cocricotlite:interior/menu_easel_white",
+      "y": 180
+    },
+    "facing=north,type=easel_black": {
+      "model": "cocricotlite:interior/menu_easel_black",
+      "y": 270
+    },
+    "facing=east,type=easel_black": {
+      "model": "cocricotlite:interior/menu_easel_black"
+    },
+    "facing=south,type=easel_black": {
+      "model": "cocricotlite:interior/menu_easel_black",
+      "y": 90
+    },
+    "facing=west,type=easel_black": {
+      "model": "cocricotlite:interior/menu_easel_black",
+      "y": 180
+    },
+    "facing=north,type=stand_frame": {
+      "model": "cocricotlite:interior/menu_stand_frame",
+      "y": 90
+    },
+    "facing=east,type=stand_frame": {
+      "model": "cocricotlite:interior/menu_stand_frame",
+      "y": 180
+    },
+    "facing=south,type=stand_frame": {
+      "model": "cocricotlite:interior/menu_stand_frame",
+      "y": 270
+    },
+    "facing=west,type=stand_frame": {
+      "model": "cocricotlite:interior/menu_stand_frame"
+    }
+  }
+}

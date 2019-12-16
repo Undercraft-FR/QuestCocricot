@@ -19,7 +19,7 @@ import rise.cocricotlite.block.BaseFacing;
 import rise.cocricotlite.item.CommonItemBlock;
 import rise.cocricotlite.util.AABBList;
 import rise.cocricotlite.util.Helper;
-import rise.cocricotlite.util.type.EnumWallLeaves;
+import rise.cocricotlite.util.type.nature.EnumWallLeaves;
 import rise.cocricotlite.util.type.PropertyList;
 
 public class BlockWallLeaves extends BaseFacing {

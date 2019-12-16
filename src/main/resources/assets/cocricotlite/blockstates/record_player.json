@@ -1,0 +1,199 @@
+{
+  "variants": {
+    "facing=north,type=wood_clear": {
+      "model": "cocricotlite:interior/record_player_wood_clear"
+    },
+    "facing=east,type=wood_clear": {
+      "model": "cocricotlite:interior/record_player_wood_clear",
+      "y": 90
+    },
+    "facing=south,type=wood_clear": {
+      "model": "cocricotlite:interior/record_player_wood_clear",
+      "y": 180
+    },
+    "facing=west,type=wood_clear": {
+      "model": "cocricotlite:interior/record_player_wood_clear",
+      "y": 270
+    },
+    "facing=north,type=wood_nature": {
+      "model": "cocricotlite:interior/record_player_wood_nature"
+    },
+    "facing=east,type=wood_nature": {
+      "model": "cocricotlite:interior/record_player_wood_nature",
+      "y": 90
+    },
+    "facing=south,type=wood_nature": {
+      "model": "cocricotlite:interior/record_player_wood_nature",
+      "y": 180
+    },
+    "facing=west,type=wood_nature": {
+      "model": "cocricotlite:interior/record_player_wood_nature",
+      "y": 270
+    },
+    "facing=north,type=wood_antique": {
+      "model": "cocricotlite:interior/record_player_wood_antique"
+    },
+    "facing=east,type=wood_antique": {
+      "model": "cocricotlite:interior/record_player_wood_antique",
+      "y": 90
+    },
+    "facing=south,type=wood_antique": {
+      "model": "cocricotlite:interior/record_player_wood_antique",
+      "y": 180
+    },
+    "facing=west,type=wood_antique": {
+      "model": "cocricotlite:interior/record_player_wood_antique",
+      "y": 270
+    },
+    "facing=north,type=wood_dark": {
+      "model": "cocricotlite:interior/record_player_wood_dark"
+    },
+    "facing=east,type=wood_dark": {
+      "model": "cocricotlite:interior/record_player_wood_dark",
+      "y": 90
+    },
+    "facing=south,type=wood_dark": {
+      "model": "cocricotlite:interior/record_player_wood_dark",
+      "y": 180
+    },
+    "facing=west,type=wood_dark": {
+      "model": "cocricotlite:interior/record_player_wood_dark",
+      "y": 270
+    },
+    "facing=north,type=white": {
+      "model": "cocricotlite:interior/record_player_white"
+    },
+    "facing=east,type=white": {
+      "model": "cocricotlite:interior/record_player_white",
+      "y": 90
+    },
+    "facing=south,type=white": {
+      "model": "cocricotlite:interior/record_player_white",
+      "y": 180
+    },
+    "facing=west,type=white": {
+      "model": "cocricotlite:interior/record_player_white",
+      "y": 270
+    },
+    "facing=north,type=pink": {
+      "model": "cocricotlite:interior/record_player_pink"
+    },
+    "facing=east,type=pink": {
+      "model": "cocricotlite:interior/record_player_pink",
+      "y": 90
+    },
+    "facing=south,type=pink": {
+      "model": "cocricotlite:interior/record_player_pink",
+      "y": 180
+    },
+    "facing=west,type=pink": {
+      "model": "cocricotlite:interior/record_player_pink",
+      "y": 270
+    },
+    "facing=north,type=red": {
+      "model": "cocricotlite:interior/record_player_red"
+    },
+    "facing=east,type=red": {
+      "model": "cocricotlite:interior/record_player_red",
+      "y": 90
+    },
+    "facing=south,type=red": {
+      "model": "cocricotlite:interior/record_player_red",
+      "y": 180
+    },
+    "facing=west,type=red": {
+      "model": "cocricotlite:interior/record_player_red",
+      "y": 270
+    },
+    "facing=north,type=brown": {
+      "model": "cocricotlite:interior/record_player_brown"
+    },
+    "facing=east,type=brown": {
+      "model": "cocricotlite:interior/record_player_brown",
+      "y": 90
+    },
+    "facing=south,type=brown": {
+      "model": "cocricotlite:interior/record_player_brown",
+      "y": 180
+    },
+    "facing=west,type=brown": {
+      "model": "cocricotlite:interior/record_player_brown",
+      "y": 270
+    },
+    "facing=north,type=yellow": {
+      "model": "cocricotlite:interior/record_player_yellow"
+    },
+    "facing=east,type=yellow": {
+      "model": "cocricotlite:interior/record_player_yellow",
+      "y": 90
+    },
+    "facing=south,type=yellow": {
+      "model": "cocricotlite:interior/record_player_yellow",
+      "y": 180
+    },
+    "facing=west,type=yellow": {
+      "model": "cocricotlite:interior/record_player_yellow",
+      "y": 270
+    },
+    "facing=north,type=green": {
+      "model": "cocricotlite:interior/record_player_green"
+    },
+    "facing=east,type=green": {
+      "model": "cocricotlite:interior/record_player_green",
+      "y": 90
+    },
+    "facing=south,type=green": {
+      "model": "cocricotlite:interior/record_player_green",
+      "y": 180
+    },
+    "facing=west,type=green": {
+      "model": "cocricotlite:interior/record_player_green",
+      "y": 270
+    },
+    "facing=north,type=mint": {
+      "model": "cocricotlite:interior/record_player_mint"
+    },
+    "facing=east,type=mint": {
+      "model": "cocricotlite:interior/record_player_mint",
+      "y": 90
+    },
+    "facing=south,type=mint": {
+      "model": "cocricotlite:interior/record_player_mint",
+      "y": 180
+    },
+    "facing=west,type=mint": {
+      "model": "cocricotlite:interior/record_player_mint",
+      "y": 270
+    },
+    "facing=north,type=black": {
+      "model": "cocricotlite:interior/record_player_black"
+    },
+    "facing=east,type=black": {
+      "model": "cocricotlite:interior/record_player_black",
+      "y": 90
+    },
+    "facing=south,type=black": {
+      "model": "cocricotlite:interior/record_player_black",
+      "y": 180
+    },
+    "facing=west,type=black": {
+      "model": "cocricotlite:interior/record_player_black",
+      "y": 270
+    },
+    "facing=north,type=gramophone": {
+      "model": "cocricotlite:interior/record_player_gramophone"
+    },
+    "facing=east,type=gramophone": {
+      "model": "cocricotlite:interior/record_player_gramophone",
+      "y": 90
+    },
+    "facing=south,type=gramophone": {
+      "model": "cocricotlite:interior/record_player_gramophone",
+      "y": 180
+    },
+    "facing=west,type=gramophone": {
+      "model": "cocricotlite:interior/record_player_gramophone",
+      "y": 270
+    }
+  }
+}

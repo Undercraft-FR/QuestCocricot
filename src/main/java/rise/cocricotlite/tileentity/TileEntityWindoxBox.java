@@ -2,7 +2,7 @@ package rise.cocricotlite.tileentity;
 
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraftforge.common.util.Constants;
-import rise.cocricotlite.util.type.EnumWindowBox;
+import rise.cocricotlite.util.type.nature.EnumWindowBox;
 
 public class TileEntityWindoxBox extends BaseTileEntity  {
 

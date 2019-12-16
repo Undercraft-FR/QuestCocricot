@@ -1,0 +1,7 @@
+{
+  "parent": "cocricotlite:block/interior/electric_white_register",
+  "textures": {
+    "0": "cocricotlite:interior/electric_black_register",
+    "particle": "cocricotlite:interior/electric_black_register"
+  }
+}

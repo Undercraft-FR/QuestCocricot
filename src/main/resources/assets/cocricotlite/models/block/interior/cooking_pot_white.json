@@ -1,0 +1,7 @@
+{
+  "parent": "cocricotlite:block/interior/cooking_pot_red",
+  "textures": {
+    "particle": "cocricotlite:interior/cooking_pot_white",
+    "texture": "cocricotlite:interior/cooking_pot_white"
+  }
+}

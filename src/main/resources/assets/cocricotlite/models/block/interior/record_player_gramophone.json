@@ -1,0 +1,48 @@
+{
+	"parent": "block/block",
+	"ambientocclusion": false,
+	"textures": {
+		"particle": "cocricotlite:interior/gramophone_speaker",
+		"texture": "cocricotlite:interior/gramophone_base",
+		"texture1": "cocricotlite:interior/gramophone_speaker"
+	},
+	"elements": [
+		{
+			"from": [ 2.5, 0, 2.5 ],
+			"to": [ 13.5, 5, 13.5 ],
+			"faces": {
+				"down": { "uv": [ 11.5, 0, 16, 4.5 ], "texture": "#texture", "cullface": "down" },
+				"up": { "uv": [ 0, 0, 11, 11 ], "texture": "#texture" },
+				"north": { "uv": [ 0, 11, 11, 16 ], "texture": "#texture" },
+				"south": { "uv": [ 0, 11, 11, 16 ], "texture": "#texture" },
+				"west": { "uv": [ 0, 11, 11, 16 ], "texture": "#texture" },
+				"east": { "uv": [ 0, 11, 11, 16 ], "texture": "#texture" }
+			}
+		},
+		{   "from": [ 0.8, 0, 8 ],
+				"to": [ 15.2, 16, 8 ],
+				"rotation": { "origin": [ 8, 8, 8 ], "axis": "y", "angle": 45, "rescale": true },
+				"shade": false,
+				"faces": {
+						"north": { "uv": [ 0, 0, 16, 16 ], "texture": "#texture1" },
+						"south": { "uv": [ 0, 0, 16, 16 ], "texture": "#texture1" }
+				}
+		},
+		{   "from": [ 8, 0, 0.8 ],
+				"to": [ 8, 16, 15.2 ],
+				"rotation": { "origin": [ 8, 8, 8 ], "axis": "y", "angle": 45, "rescale": true },
+				"shade": false,
+				"faces": {
+						"west": { "uv": [ 0, 0, 16, 16 ], "texture": "#texture1" },
+						"east": { "uv": [ 0, 0, 16, 16 ], "texture": "#texture1" }
+				}
+		}
+	],
+	"display": {
+		"gui": {
+			"rotation":  [ 30, 45, 0 ],
+			"translation":  [ 0, 1.2, 0 ],
+			"scale":  [ 0.9, 0.9, 0.9 ]
+		}
+	}
+}

@@ -12,8 +12,7 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.registries.GameData;
 import rise.cocricotlite.CocricotLite;
-import rise.cocricotlite.util.LogHelper;
-import rise.cocricotlite.util.type.EnumFlowerPot;
+import rise.cocricotlite.util.type.nature.EnumFlowerPot;
 
 public class Recipes {
 

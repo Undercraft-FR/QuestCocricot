@@ -12,7 +12,7 @@ import rise.cocricotlite.block.BaseBlock;
 import rise.cocricotlite.item.CommonItemBlock;
 import rise.cocricotlite.util.AABBList;
 import rise.cocricotlite.util.Helper;
-import rise.cocricotlite.util.type.EnumWine;
+import rise.cocricotlite.util.type.dish.EnumWine;
 import rise.cocricotlite.util.type.PropertyList;
 
 public class BlockWine extends BaseBlock {

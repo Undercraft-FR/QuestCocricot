@@ -1,0 +1,7 @@
+{
+    "parent": "cocricotlite:block/interior/record_player_wood",
+    "textures": {
+        "particle": "cocricotlite:interior/record_player_wood_clear",
+        "texture": "cocricotlite:interior/record_player_wood_clear"
+    }
+}

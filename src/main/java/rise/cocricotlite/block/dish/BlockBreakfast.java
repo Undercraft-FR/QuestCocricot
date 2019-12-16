@@ -17,7 +17,7 @@ import rise.cocricotlite.block.BaseFacing;
 import rise.cocricotlite.item.CommonItemBlock;
 import rise.cocricotlite.util.AABBList;
 import rise.cocricotlite.util.Helper;
-import rise.cocricotlite.util.type.EnumBreakfast;
+import rise.cocricotlite.util.type.dish.EnumBreakfast;
 import rise.cocricotlite.util.type.PropertyList;
 
 public class BlockBreakfast extends BaseFacing {

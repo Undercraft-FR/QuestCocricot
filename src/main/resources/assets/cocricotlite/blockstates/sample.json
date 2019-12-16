@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "type=cookie": {
+      "model": "cocricotlite:interior/sample_cookie"
+    },
+    "type=red_tart": {
+      "model": "cocricotlite:interior/sample_red_tart"
+    },
+    "type=yellow_tart": {
+      "model": "cocricotlite:interior/sample_yellow_tart"
+    },
+    "type=cup_cake": {
+      "model": "cocricotlite:interior/sample_cup_cake"
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "variants": {
+    "facing=north,type=modern": {
+      "model": "cocricotlite:interior/book_modern"
+    },
+    "facing=east,type=modern": {
+      "model": "cocricotlite:interior/book_modern",
+      "y": 90
+    },
+    "facing=south,type=modern": {
+      "model": "cocricotlite:interior/book_modern",
+      "y": 180
+    },
+    "facing=west,type=modern": {
+      "model": "cocricotlite:interior/book_modern",
+      "y": 270
+    },
+    "facing=north,type=antique": {
+      "model": "cocricotlite:interior/book_antique"
+    },
+    "facing=east,type=antique": {
+      "model": "cocricotlite:interior/book_antique",
+      "y": 90
+    },
+    "facing=south,type=antique": {
+      "model": "cocricotlite:interior/book_antique",
+      "y": 180
+    },
+    "facing=west,type=antique": {
+      "model": "cocricotlite:interior/book_antique",
+      "y": 270
+    },
+    "facing=north,type=open_modern": {
+      "model": "cocricotlite:interior/book_open_modern"
+    },
+    "facing=east,type=open_modern": {
+      "model": "cocricotlite:interior/book_open_modern",
+      "y": 90
+    },
+    "facing=south,type=open_modern": {
+      "model": "cocricotlite:interior/book_open_modern",
+      "y": 180
+    },
+    "facing=west,type=open_modern": {
+      "model": "cocricotlite:interior/book_open_modern",
+      "y": 270
+    },
+    "facing=north,type=open_antique": {
+      "model": "cocricotlite:interior/book_open_antique"
+    },
+    "facing=east,type=open_antique": {
+      "model": "cocricotlite:interior/book_open_antique",
+      "y": 90
+    },
+    "facing=south,type=open_antique": {
+      "model": "cocricotlite:interior/book_open_antique",
+      "y": 180
+    },
+    "facing=west,type=open_antique": {
+      "model": "cocricotlite:interior/book_open_antique",
+      "y": 270
+    },
+    "facing=north,type=line_modern": {
+      "model": "cocricotlite:interior/book_line_modern"
+    },
+    "facing=east,type=line_modern": {
+      "model": "cocricotlite:interior/book_line_modern",
+      "y": 90
+    },
+    "facing=south,type=line_modern": {
+      "model": "cocricotlite:interior/book_line_modern",
+      "y": 180
+    },
+    "facing=west,type=line_modern": {
+      "model": "cocricotlite:interior/book_line_modern",
+      "y": 270
+    },
+    "facing=north,type=line_antique": {
+      "model": "cocricotlite:interior/book_line_antique"
+    },
+    "facing=east,type=line_antique": {
+      "model": "cocricotlite:interior/book_line_antique",
+      "y": 90
+    },
+    "facing=south,type=line_antique": {
+      "model": "cocricotlite:interior/book_line_antique",
+      "y": 180
+    },
+    "facing=west,type=line_antique": {
+      "model": "cocricotlite:interior/book_line_antique",
+      "y": 270
+    }
+  }
+}

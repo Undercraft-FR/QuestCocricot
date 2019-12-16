@@ -5,13 +5,16 @@ import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
+import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import rise.cocricotlite.CocricotLite;
 import rise.cocricotlite.Tabs;
 import rise.cocricotlite.block.BaseFacing;
 import rise.cocricotlite.block.dish.*;
+import rise.cocricotlite.block.interior.*;
 import rise.cocricotlite.block.nature.*;
+import rise.cocricotlite.tileentity.TileEntityBook;
 import rise.cocricotlite.tileentity.TileEntityWindoxBox;
 import rise.cocricotlite.util.AABBList;
 import rise.cocricotlite.util.Helper;
@@ -32,7 +35,7 @@ public class BlockRegistry {
         {
             public void registerModels()
             {
-                CocricotLite.proxy.registerItemModel(Item.getItemFromBlock(this), 0, new ModelResourceLocation("cocricotlite:dish/whole_cake", "inventory"));
+                Helper.registerItemModel(this, "dish", "whole_cake");
             }
 
             public boolean isFullCube(IBlockState state)
@@ -55,8 +58,18 @@ public class BlockRegistry {
         CBlocks.FLOWER_POT_BIG = new BlockFlowerPot("flower_pot_big");
         CBlocks.VASE = new BlockVase();
         CBlocks.WINDOW_BOX = new BlockWindowBox();
-        Helper.registerTileEntity(TileEntityWindoxBox.class, "window_box");
         CBlocks.HANGING_PLANT = new BlockHangingPlant();
         CBlocks.MINI_TREE = new BlockMiniTree();
+
+        //INTERIOR
+        CBlocks.BOOK = new BlockBook();
+        CBlocks.MENU = new BlockMenu();
+        CBlocks.SAMPLE = new BlockSample();
+        CBlocks.JAR = new BlockJar();
+        CBlocks.COOKING_POT = new BlockCookingPot();
+        CBlocks.GLOBE = new BlockGlobe();
+        CBlocks.ELECTRIC = new BlockElectric();
+        CBlocks.RECORD_PLAYER = new BlockRecordPlayer();
+
     }
 }

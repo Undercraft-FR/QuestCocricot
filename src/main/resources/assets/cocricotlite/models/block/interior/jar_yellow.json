@@ -1,0 +1,6 @@
+{
+    "parent": "cocricotlite:block/interior/jar_brown",
+    "textures": {
+        "0": "cocricotlite:interior/jar_yellow"
+    }
+}

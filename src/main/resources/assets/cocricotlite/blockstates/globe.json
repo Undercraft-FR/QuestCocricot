@@ -1,0 +1,25 @@
+{
+  "variants": {
+    "type=white": {
+      "model": "cocricotlite:interior/globe_white"
+    },
+    "type=antique": {
+      "model": "cocricotlite:interior/globe_antique"
+    },
+    "type=blue": {
+      "model": "cocricotlite:interior/globe_blue"
+    },
+    "type=black": {
+      "model": "cocricotlite:interior/globe_black"
+    },
+    "type=gold_celestial": {
+      "model": "cocricotlite:interior/globe_gold_celestial"
+    },
+    "type=antique_celestial": {
+      "model": "cocricotlite:interior/globe_antique_celestial"
+    },
+    "type=colonial": {
+      "model": "cocricotlite:interior/globe_colonial"
+    }
+  }
+}

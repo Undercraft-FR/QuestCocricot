@@ -12,7 +12,7 @@ import rise.cocricotlite.block.BaseBlock;
 import rise.cocricotlite.item.CommonItemBlock;
 import rise.cocricotlite.util.AABBList;
 import rise.cocricotlite.util.Helper;
-import rise.cocricotlite.util.type.EnumPancake;
+import rise.cocricotlite.util.type.dish.EnumPancake;
 import rise.cocricotlite.util.type.PropertyList;
 
 public class BlockPancake extends BaseBlock {

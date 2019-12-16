@@ -12,7 +12,7 @@ import rise.cocricotlite.block.BaseBlock;
 import rise.cocricotlite.item.CommonItemBlock;
 import rise.cocricotlite.util.AABBList;
 import rise.cocricotlite.util.Helper;
-import rise.cocricotlite.util.type.EnumDroopingLeaves;
+import rise.cocricotlite.util.type.nature.EnumDroopingLeaves;
 import rise.cocricotlite.util.type.PropertyList;
 
 public class BlockDroopingLeaves extends BaseBlock {

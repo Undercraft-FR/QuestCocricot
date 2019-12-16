@@ -1,0 +1,7 @@
+{
+  "parent": "cocricotlite:block/interior/menu_easel",
+  "textures": {
+    "particle": "cocricotlite:interior/menu_easel_black",
+    "texture": "cocricotlite:interior/menu_easel_black"
+  }
+}

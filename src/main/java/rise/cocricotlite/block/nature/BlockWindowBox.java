@@ -20,7 +20,7 @@ import rise.cocricotlite.block.BaseFacingTile;
 import rise.cocricotlite.item.CommonItemBlock;
 import rise.cocricotlite.tileentity.TileEntityWindoxBox;
 import rise.cocricotlite.util.Helper;
-import rise.cocricotlite.util.type.EnumWindowBox;
+import rise.cocricotlite.util.type.nature.EnumWindowBox;
 import rise.cocricotlite.util.type.PropertyList;
 
 import javax.annotation.Nullable;
@@ -29,7 +29,7 @@ public class BlockWindowBox extends BaseFacingTile {
 
     public BlockWindowBox()
     {
-        super("window_box", Material.WOOD, Tabs.TAB_NATURE, SoundType.WOOD, 1.5F, 3F);
+        super("window_box", Material.WOOD, Tabs.TAB_NATURE, SoundType.WOOD, 1.5F, 3F, TileEntityWindoxBox.class);
         this.setDefaultState(this.getBlockState().getBaseState().withProperty(FACING, EnumFacing.NORTH));
         this.register(new CommonItemBlock(this, itemStack -> EnumWindowBox.byMetadata(itemStack.getMetadata()).getName()));
     }

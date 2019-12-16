@@ -1,0 +1,64 @@
+{
+  "variants": {
+    "facing=north,type=white": {
+      "model": "cocricotlite:interior/jar_white"
+    },
+    "facing=east,type=white": {
+      "model": "cocricotlite:interior/jar_white",
+      "y": 90
+    },
+    "facing=south,type=white": {
+      "model": "cocricotlite:interior/jar_white",
+      "y": 180
+    },
+    "facing=west,type=white": {
+      "model": "cocricotlite:interior/jar_white",
+      "y": 270
+    },
+    "facing=north,type=red": {
+      "model": "cocricotlite:interior/jar_red"
+    },
+    "facing=east,type=red": {
+      "model": "cocricotlite:interior/jar_red",
+      "y": 90
+    },
+    "facing=south,type=red": {
+      "model": "cocricotlite:interior/jar_red",
+      "y": 180
+    },
+    "facing=west,type=red": {
+      "model": "cocricotlite:interior/jar_red",
+      "y": 270
+    },
+    "facing=north,type=brown": {
+      "model": "cocricotlite:interior/jar_brown"
+    },
+    "facing=east,type=brown": {
+      "model": "cocricotlite:interior/jar_brown",
+      "y": 90
+    },
+    "facing=south,type=brown": {
+      "model": "cocricotlite:interior/jar_brown",
+      "y": 180
+    },
+    "facing=west,type=brown": {
+      "model": "cocricotlite:interior/jar_brown",
+      "y": 270
+    },
+    "facing=north,type=yellow": {
+      "model": "cocricotlite:interior/jar_yellow"
+    },
+    "facing=east,type=yellow": {
+      "model": "cocricotlite:interior/jar_yellow",
+      "y": 90
+    },
+    "facing=south,type=yellow": {
+      "model": "cocricotlite:interior/jar_yellow",
+      "y": 180
+    },
+    "facing=west,type=yellow": {
+      "model": "cocricotlite:interior/jar_yellow",
+      "y": 270
+    }
+  }
+}

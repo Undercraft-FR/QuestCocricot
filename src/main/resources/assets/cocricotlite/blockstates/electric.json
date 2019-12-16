@@ -1,0 +1,64 @@
+{
+  "variants": {
+    "facing=north,type=camera": {
+      "model": "cocricotlite:interior/electric_camera",
+      "y": 90
+    },
+    "facing=east,type=camera": {
+      "model": "cocricotlite:interior/electric_camera",
+      "y": 180
+    },
+    "facing=south,type=camera": {
+      "model": "cocricotlite:interior/electric_camera",
+      "y": 270
+    },
+    "facing=west,type=camera": {
+      "model": "cocricotlite:interior/electric_camera"
+    },
+    "facing=north,type=laptop": {
+      "model": "cocricotlite:interior/electric_laptop"
+    },
+    "facing=east,type=laptop": {
+      "model": "cocricotlite:interior/electric_laptop",
+      "y": 90
+    },
+    "facing=south,type=laptop": {
+      "model": "cocricotlite:interior/electric_laptop",
+      "y": 180
+    },
+    "facing=west,type=laptop": {
+      "model": "cocricotlite:interior/electric_laptop",
+      "y": 270
+    },
+    "facing=north,type=white_register": {
+      "model": "cocricotlite:interior/electric_white_register"
+    },
+    "facing=east,type=white_register": {
+      "model": "cocricotlite:interior/electric_white_register",
+      "y": 90
+    },
+    "facing=south,type=white_register": {
+      "model": "cocricotlite:interior/electric_white_register",
+      "y": 180
+    },
+    "facing=west,type=white_register": {
+      "model": "cocricotlite:interior/electric_white_register",
+      "y": 270
+    },
+    "facing=north,type=black_register": {
+      "model": "cocricotlite:interior/electric_black_register"
+    },
+    "facing=east,type=black_register": {
+      "model": "cocricotlite:interior/electric_black_register",
+      "y": 90
+    },
+    "facing=south,type=black_register": {
+      "model": "cocricotlite:interior/electric_black_register",
+      "y": 180
+    },
+    "facing=west,type=black_register": {
+      "model": "cocricotlite:interior/electric_black_register",
+      "y": 270
+    }
+  }
+}

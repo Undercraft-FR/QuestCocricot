@@ -25,4 +25,31 @@ public class CBlocks {
     public static Block WINDOW_BOX;
     public static Block HANGING_PLANT;
     public static Block MINI_TREE;
+
+    //INTERIOR
+    public static Block BOOK;
+    public static Block MENU;
+    public static Block JAR;
+    public static Block SAMPLE;
+    public static Block COOKING_POT;
+    public static Block SUNDRY;
+    public static Block GLOBE;
+    public static Block ELECTRIC;
+    public static Block RECORD_PLAYER;
+    public static Block ANTIQUE;
+    public static Block TELEPHONE;
+    public static Block BED_FRAME;
+    public static Block BED_MATTRESS;
+    public static Block BED_PILLOW;
+    public static Block FIRE_PLACE;
+    public static Block RANGE;
+    public static Block SINK;
+    public static Block FAUCET;
+    public static Block SHOWER;
+    public static Block BATHTUB;
+    public static Block TOILET;
+
+
+
+    
 }

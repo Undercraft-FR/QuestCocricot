@@ -8,13 +8,15 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import rise.cocricotlite.util.Helper;
 
 public abstract class BaseFacingTile extends BaseFacing implements ITileEntityProvider {
 
-    public BaseFacingTile(String name, Material material, CreativeTabs tab, SoundType sound, float hardness, float resistance)
+    public BaseFacingTile(String name, Material material, CreativeTabs tab, SoundType sound, float hardness, float resistance, Class<? extends TileEntity> cls)
     {
         super(name, material, tab, sound, hardness, resistance);
         this.hasTileEntity = true;
+        Helper.registerTileEntity(cls, name);
     }
 
     @Override
