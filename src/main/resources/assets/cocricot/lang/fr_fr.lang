@@ -1,0 +1,81 @@
+#FRENCH LOCALIZED
+
+#ONGLET
+itemGroup.tab_dish=Nourriture / Boisson
+itemGroyp.tab.nature=Nature
+
+#PLAT
+tile.coffee.single.name=Tasse de café
+tile.coffee.double.name=Tasses de café
+tile.cafe_glass.latte.name=Café Latte
+tile.cafe_glass.choco_mint.name=Chocolat à la menthe
+tile.tapioca.cafe_latte.name=Tapioca Café Latte
+tile.tapioca.milk_tea.name=Tapioca Thé au lait
+tile.tapioca.matcha.name=Tapioca Matcha
+tile.tapioca.matcha_tea.name=Tapioca Thé Matcha
+tile.tapioca.strawberry_milk.name=Tapioca Lait fraise
+tile.champagne.single.name=Champagne
+tile.champagne.double.name=Champagnes
+tile.champagne.rose_single.name=Champagne rosé
+tile.champagne.rose_double.name=Champagnes rosés
+tile.wine.red_single.name=Vin rouge
+tile.wine.red_double.name=Vins rouges
+tile.wine.white_single.name=Vin blanc
+tile.wine.white_double.name=Vins blancs
+tile.wine.bottle.name=Bouteille de vin
+tile.breakfast.toast.name=Pain grillé au petit-déjeuner
+tile.breakfast.croissant.name=Croissant au petit-déjeuner
+tile.pizza.margherita.name=Pizza Margherita
+tile.pizza.quattro_formaggi.name=Pizza Quattro Formaggi
+tile.whole_cake.name=Gâteau entier naturel
+tile.pancake.butter.name=Pancake au beurre
+tile.pancake.berry.name=Pancake aux baies
+tile.pancake.chocolate_banana.name=Pancake banane chocolat
+tile.pancake.chocolate_berry.name=Pancake aux baies chocolatées
+
+#NATURE
+tile.drooping_leaves.green.name=Feuilles tombantes vertes
+tile.drooping_leaves.light_green.name=Feuilles tombantes vert clair
+tile.drooping_leaves.dark_green.name=Feuilles tombantes vert foncé
+tile.planting_green.umbellata.name=Plantation d'ombellata
+tile.planting_green.tupidanthus.name=Plantation de tupidanthus
+tile.planting_green.sansevieria.name=Plantation de sansevieria
+tile.planting_green.olive.name=Plantation d'olivier
+tile.planting_green.benjamin.name=Plantation de benjamin
+tile.planting_green.gold_crest.name=Plantation de crête dorée
+tile.planting_green.wild_banana.name=Plantation de bananier sauvage
+tile.planting_green.pachira.name=Plantation de pachira
+tile.planting_green.yucca.name=Plantation de yucca
+tile.planting_green.dypsis_lutescens.name=Plantation de dypsis lutescens
+tile.planting_green.cactus.name=Plantation de cactus
+tile.flower_pot.white.name=Poterie fleurie blanche
+tile.flower_pot.light_brown.name=Poterie fleurie marron clair
+tile.flower_pot.brown.name=Poterie fleurie marron
+tile.flower_pot.dark_orange.name=Poterie fleurie orange foncé
+tile.flower_pot.black.name=Poterie fleurie noire
+tile.flower_pot.basket_light.name=Poterie fleurie panier léger
+tile.flower_pot.basket.name=Poterie fleurie panier
+tile.flower_pot_big.white.name=Grande poterie fleurie blanche
+tile.flower_pot_big.light_brown.name=Grande poterie fleurie marron clair
+tile.flower_pot_big.brown.name=Grande poterie fleurie marron
+tile.flower_pot_big.dark_orange.name=Grande poterie fleurie orange foncé
+tile.flower_pot_big.black.name=Grande poterie fleurie noire
+tile.flower_pot_big.basket_light.name=Grand pot de fleur panier léger
+tile.flower_pot_big.basket.name=Grand pot de fleur panier
+tile.vase.white.name=Vase blanc
+tile.vase.light_brown.name=Vase marron clair
+tile.vase.brown.name=Vase marron
+tile.vase.dark_orange.name=Vase orange foncé
+tile.vase.black.name=Vase noir
+tile.vase.marine_blue.name=Vase bleu marine
+tile.window_box.white.name=Boîte à fleurs blanche
+tile.window_box.sea_drift.name=Boîte à fleurs Sea Drift
+tile.window_box.natural.name=Boîte à fleurs naturelle
+tile.window_box.brown.name=Boîte à fleurs marron
+tile.window_box.dark.name=Boîte à fleurs foncé
+tile.hanging_plant.basket.name=Panier de plantes suspendu
+tile.hanging_plant.flower.name=Panier de fleurs suspendu
+tile.mini_tree.limp.name=Petit arbre affaissé
+tile.mini_tree.limp_leaves.name=Petit arbre affaissé avec feuilles
+tile.mini_tree.straight.name=Petit arbre droit
+tile.mini_tree.straight_leaves.name=Petit arbre droit avec feuilles
